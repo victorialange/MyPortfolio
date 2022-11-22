@@ -1,0 +1,31 @@
+@use "./variables";
+
+// WRAPPER
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// hide SKIP LINK TO MAIN CONTENT
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    z-index: 10;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+// display skip link to main focus when tabbing
+.skipLink:focus {
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+// img
+img {
+    max-width: 100%;
+    display: block;
+}
