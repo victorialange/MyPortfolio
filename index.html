@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>victoriaLange</title>
+    <title> 
+        Victoria Lange
+    </title>
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- links to google font Poppins regular & bold -->
@@ -24,7 +26,8 @@
         <div class="wrapper">
             <!-- LOGO -->
 			<a href="./index.html" class="logo">
-				<h1>victoria</h1>
+                <img src="./assets/forVictoria.png" alt="logo for Victoria">
+				<!-- <h1>ictoria</h1> -->
 			</a>
 
             <!-- NAV LINKS -->
@@ -40,25 +43,25 @@
                 <!-- Github -->
                 <li>
                     <a href="https://github.com/victorialange" target="_blank">
-                        <i></i>
+                        <i class="fa-brands fa-github" sr-only="Victoria's Github repository"></i>
                     </a>
                 </li>
                 <!-- LinkedIn -->
                 <li>
                     <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank">
-                        <i></i>
+                        <i class="fa-brands fa-linkedin" sr-only="Victoria's LinkedIn profile"></i>
                     </a>
                 </li>
                 <!-- email -->
                 <li>
                     <a href="mailto:victoriaj.lange@gmail.com" target="_blank">
-                        <i></i>
+                        <i class="fa-solid fa-envelope" sr-only="Victoria's email address"></i>
                     </a>
                 </li>
                 <!-- Calendly -->
                 <li>
                     <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank">
-                        <i></i>
+                        <i class="fa-solid fa-calendar" sr-only="Victoria's Calendly"></i>
                     </a>
                 </li>
             </ul>
@@ -69,10 +72,20 @@
     <header id="header">
         <!-- WRAPPER -->
         <div class="wrapper">
-            <h4>Hi, I'm Victoria</h4>
-            <h2>Front-end web developer</h2>
+            <h2>Victoria Lange 
+                <span>web developer</span>
+            </h2>
             <p>based in Waterloo, Ontario</p>
-            <a href="#projects" class="button">View my projects</a>
+            <!-- header links container -->
+            <div class="headerLinks">
+                <!-- skip to Projects styled like button -->
+                <a href="#projects" class="button">View my projects</a>
+                <!-- skip to about section arrow -->
+                <a href="#about">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div><!-- END header links container -->
+            
         </div><!-- END WRAPPER -->
     </header>
 
@@ -82,16 +95,26 @@
         <section id="about" class="about">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <h3>About Me</h3>
-                <!-- TEXT CONTAINER ABOUT -->
-                <div class="aboutTextContainer">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam accusamus quam dolor facere nisi? Fugit dolorem autem minima veritatis, ut dolor repellat quas iure necessitatibus, iste illum vel officiis repellendus!</p>
-                </div><!-- END TEXT CONTAINER -->
+                <!-- heading with the style of button -->
+                <div class="button">
+                    <h3>About Me</h3>
+                </div><!-- END heading with the style of button -->
+                <h4>Get to know me!</h4>
+                <!-- ABOUT FLEX CONTAINER -->
+                <div class="aboutFlex">
+                    <!-- TEXT CONTAINER ABOUT -->
+                    <div class="aboutTextContainer">
+                        <h5>Hi, I'm <span>Victoria</span></h5>
+                        <p>I'm a front-end developer passionate about building accessible and responsive web applications and solving problems with creative and analytical thinking.</p>
+                        <p>As a former competitive athlete and coach, now turned developer, I am someone who enjoys working together with other people and finding solutions in a fast-paced and intensive team environment. From my 16 years of experience as a competitve figure skater and then coach, I know what it takes to achieve success and be able to deliver satisfying results.   </p>
+                    </div><!-- END TEXT CONTAINER -->
 
-                <!-- IMG CONTAINER ABOUT -->
-                <div class="aboutImgContainer">
-                    <img src="" alt="photo of Victoria">
-                </div><!-- END IMG CONTAINER -->
+                    <!-- IMG CONTAINER ABOUT -->
+                    <div class="aboutImgContainer">
+                        <img src="" alt="photo of Victoria">
+                    </div><!-- END IMG CONTAINER -->
+                </div><!-- END FLEX CONTAINER -->
+                
             </div><!-- END WRAPPER -->
         </section>
 
@@ -99,32 +122,36 @@
         <section id="skills" class="skills">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <h3>My Skills</h3>
+                <!-- heading with the style of button -->
+                <div class="button">
+                    <h3>Skills</h3>
+                </div><!-- END heading with the style of button -->
+                <h4>My Tech Stack & Tools I Use</h4>
                 <!-- SKILLS list -->
                 <ul class="skillsList">
                     <!-- HTML5 -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
                         <p>HTML5</p>
                     </li>
                     <!-- CSS3 -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
                         <p>CSS3</p>
                     </li>
                     <!-- SASS -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-sass" aria-hidden="true"></i>
                         <p>SASS</p>
                     </li>
                     <!-- JavaScript -->
                     <li>
-                        <i class="icon-javascript" aria-hidden="true"></i>
+                        <i class="fa-brands fa-square-js" aria-hidden="true"></i>
                         <p>Javascript</p>
                     </li>
                     <!-- React -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-react" aria-hidden="true"></i>
                         <p>React</p>
                     </li>
                     <!-- RESTful APIs -->
@@ -134,12 +161,12 @@
                     </li>
                     <!-- Git -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
                         <p>Git</p>
                     </li>
                     <!-- Github -->
                     <li>
-                        <i aria-hidden="true"></i>
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
                         <p>Github</p>
                     </li>
                     <!-- Firebase -->
@@ -147,15 +174,28 @@
                         <i class="devicon-firebase-plain" aria-hidden="true"></i>
                         <p>Firebase</p>
                     </li>
+                    <!-- Command Line -->
+                    <li>
+                        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                        <p>Command Line</p>
+                    </li>
                     <!-- Responsive Design -->
                     <li>
-                        <i></i>
+                        <!-- Responsive Icon container -->
+                        <div class="responsiveIconContainer">
+                            <!-- icon by Freepik found at https://www.flaticon.com/free-icon/tablet-phone-and-browser_81526?term=tablet%20phone&page=1&position=10&page=1&position=10&related_id=81526&origin=style -->
+                            <img src="./assets/tablet-phone-and-browser.svg" alt="icon of tablet, phone and browser window" aria-hidden="true">
+                        </div><!-- END Responsive Icon container -->
                         <p>Responsive Design</p>
                     </li>
-                    <!-- Accessibility -->
+                    <!-- Web Accessibility -->
                     <li>
-                        <i ></i>
-                        <p>Accessibility</p>
+                        <!-- Web Accessibility Logo -->
+                        <!-- icon by World Wide Web Consortium - http://www.w3.org, Public Domain, https://commons.wikimedia.org/w/index.php?curid=36329006 -->
+                        <a href="https://commons.wikimedia.org/w/index.php?curid=36329006" target="_blank">
+                            <img src="./assets/W3C_icon.svg" alt="W3C logo" aria-hidden="true">
+                        </a>
+                        <p>Web Accessibility</p>
                     </li>
                 </ul>
             </div><!-- END WRAPPER -->
@@ -165,8 +205,11 @@
         <section id="projects" class="projects">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <h3>My Projects</h3>
-
+                <!-- heading with the style of button -->
+                <div class="button">
+                    <h3>Projects</h3>
+                </div><!-- END heading with the style of button -->
+                <h4>Some of my latest work</h4>
             </div><!-- END WRAPPER -->
         </section>
 
@@ -174,25 +217,63 @@
         <section id="contact" class="contact">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <h3>Contact Me</h3>
-                <!-- TEXT CONTAINER CONTACT -->
-                <div class="contactTextContainer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolor exercitationem perferendis eum, explicabo quae ullam libero architecto magnam minus pariatur sed odit omnis, dolorum vero corrupti, repudiandae praesentium iste?</p>
-                </div><!-- END TEXT CONTAINER -->
-                <!-- CONTACT FORM CONTAINER -->
-                <div class="contactFormContainer">
-                    <form action="">
-                        <!-- NAME -->
-                        <label for="">Name</label>
-                        <input type="text">
-                        <!-- EMAIL -->
-                        <label for="">Email</label>
-                        <input type="email">
-                        <!-- MESSAGE -->
-                        <label for="">Message</label>
-                        <textarea name="" id=""></textarea>
-                    </form>
+                
+                <h3>Let's Get In Touch</h3>
+                <!-- FLEX CONTAINER -->
+                <div class="contactFlex">
+                    <!-- TEXT CONTAINER CONTACT -->
+                    <div class="contactTextContainer">
+                        <p>Want to say hi or discuss some of my work and qualifications? Then feel free to reach out to me by filling out the contact form right here. I look forward to hearing from you!</p>
+                    <!-- SOCIAL MEDIA -->
+                    <ul class="socials">
+                        <!-- Github -->
+                        <li>
+                            <a href="https://github.com/victorialange" target="_blank">
+                                <i class="fa-brands fa-github" sr-only="Victoria's Github repository"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank">
+                                <i class="fa-brands fa-linkedin" sr-only="Victoria's LinkedIn profile"></i>
+                            </a>
+                        </li>
+                        <!-- email -->
+                        <li>
+                            <a href="mailto:victoriaj.lange@gmail.com" target="_blank">
+                                <i class="fa-solid fa-envelope" sr-only="Victoria's email address"></i>
+                            </a>
+                        </li>
+                        <!-- Calendly -->
+                        <li>
+                            <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank">
+                                <i class="fa-solid fa-calendar" sr-only="Victoria's Calendly"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    </div><!-- END TEXT CONTAINER -->
+                    <!-- CONTACT FORM CONTAINER -->
+                    <div class="contactFormContainer">
+                        <form action="https://formspree.io/f/mpznnvwy"
+                        method="POST">
+                            <!-- NAME -->
+                            <label for="userName">Your Name:</label>
+                            <input type="text" id="userName" required>
+                            <!-- EMAIL -->
+                            <label for="userEmail">Your Email Adress:</label>
+                            <input type="email" id="userEmail" required>
+                            <!-- MESSAGE -->
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" id="message" required></textarea>
+                            <button type="submit" class="button formButton">
+                                Send
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
+                
                 
             </div><!-- END WRAPPER -->
         </section>
@@ -200,8 +281,18 @@
 
     <!-- FOOTER -->
     <footer id="footer">
-        <p>Copyright © Victoria Lange 2022</p>
-        <p>Designed by Harnish Design</p>
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- COPYRIGHT CONTAINER -->
+            <div class="copyright">
+                <p>Copyright © <span>Victoria Lange</span> 2022</p>
+            </div><!-- END COPYRIGHT -->
+            <!-- DESIGN CREDIT CONTAINER -->
+            <div class="designCredit">
+               <p>Design inspired by <span>Harnish Design</span></p> 
+            </div><!-- END DESIGN CREDIT -->
+            
+        </div><!-- END WRAPPER -->
     </footer>
 
     <!-- Font Awesome kit's code for icons -->

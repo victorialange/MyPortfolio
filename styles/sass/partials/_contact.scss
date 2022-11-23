@@ -2,5 +2,63 @@
 
 // contact section
 .contact {
-    background-color: variables.$lightBlue;
+    background-color: #FFE8E1;
+    padding: 80px 0 100px;
+    .formButton {
+        background-color: variables.$black;
+        margin-top: 12px;
+        align-self: flex-start;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: start;
+        margin: 8px 0;
+    }
+    ul {
+        display: flex;
+        margin-top: 60px;
+    }
+    li {
+        margin-right: 20px;
+    }
+    p {
+        margin: 0;
+    }
+    i {
+        font-size: 2rem;
+    }
+}
+
+// contact flex
+.contactFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.contactTextContainer {
+    width: 40%;
+    margin-right: 15px;
+}
+.contactFormContainer {
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    input,
+    textarea {
+        border: 0px;
+        border-bottom: 3px solid #82899B;
+        background-color: transparent;
+        margin: 10px 0 20px;
+    }
+    textarea {
+        height: 150px;
+    }
+    i {
+        font-size: 1rem;
+    }
 }

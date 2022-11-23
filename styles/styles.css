@@ -246,11 +246,37 @@ html {
   left: 0;
   right: 0;
   text-align: center;
+  top: 80px;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.button {
+  padding: 10px 36px;
+  border: 2px solid transparent;
+  background-color: #FFC4D1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 html {
@@ -259,6 +285,7 @@ html {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -271,8 +298,318 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #000100;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(28, 28, 28);
+  font-size: 1rem;
+}
+
+h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.formButton {
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  font-size: 0.8rem;
+}
+footer p {
+  margin: 0;
+}
+footer span {
+  color: #EFAAC4;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255, 232, 225, 0.48);
+}
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav i {
+  font-size: 1.5rem;
+}
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav img {
+  height: 40px;
+}
+
+header {
+  padding: 150px 0 30px;
+  background-color: #FFE8E1;
+  text-align: center;
+}
+header span {
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+header a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header .button {
+  margin-top: 50px;
+}
+header a:last-child {
+  margin-top: 80px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.headerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about {
+  padding: 50px 0 80px;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about h3 {
+  margin: 0;
+}
+.about .button,
+.about h4 {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.about span {
+  font-weight: bold;
+  border-bottom: 4px solid #FFC4D1;
+  padding-bottom: 2.5px;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutTextContainer {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.aboutImgContainer {
+  width: 30%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.skills {
+  background-color: #FFE8E1;
+  padding: 30px 0 60px;
+}
+.skills i {
+  font-size: 3.5rem;
+}
+.skills img {
+  height: 3.5rem;
+}
+
+.skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skillsList li {
+  width: calc(16.6666666667% - 25px);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.skillsList .responsiveIconContainer,
+.skillsList a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects {
+  background-color: #fff;
+  padding: 30px 0 100px;
 }
 
 .contact {
-  background-color: #94C5CC;
+  background-color: #FFE8E1;
+  padding: 80px 0 100px;
+}
+.contact .formButton {
+  background-color: #000100;
+  margin-top: 12px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.contact h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: start;
+  margin: 8px 0;
+}
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+.contact li {
+  margin-right: 20px;
+}
+.contact p {
+  margin: 0;
+}
+.contact i {
+  font-size: 2rem;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contactTextContainer {
+  width: 40%;
+  margin-right: 15px;
+}
+
+.contactFormContainer {
+  width: 50%;
+}
+.contactFormContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactFormContainer input,
+.contactFormContainer textarea {
+  border: 0px;
+  border-bottom: 3px solid #82899B;
+  background-color: transparent;
+  margin: 10px 0 20px;
+}
+.contactFormContainer textarea {
+  height: 150px;
+}
+.contactFormContainer i {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #000100;
+  padding: 25px 0 20px;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

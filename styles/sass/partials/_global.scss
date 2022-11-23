@@ -22,10 +22,33 @@
     left: 0;
     right: 0;
     text-align: center;
+    top: 80px;
 }
 
 // img
 img {
     max-width: 100%;
     display: block;
+}
+
+// buttons
+.button {
+    padding: 10px 36px;
+    border: 2px solid transparent;
+    background-color: #FFC4D1;
+    width: fit-content;
+    align-self: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+// section
+section {
+    .wrapper {
+        display: flex;
+        flex-direction: column; 
+    }
+    
 }

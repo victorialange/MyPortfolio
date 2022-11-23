@@ -1,1 +1,32 @@
 @use "./variables";
+
+.skills {
+    background-color: #FFE8E1;
+    padding: 30px 0 60px;
+    i {
+        font-size: 3.5rem;
+    }
+    img {
+        height: 3.5rem;
+    }
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-top: 50px;
+    // padding: 0 60px;
+    li {
+        width: calc((100% / 6) - 25px);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .responsiveIconContainer,
+    a {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
