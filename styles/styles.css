@@ -263,6 +263,15 @@ img {
   width: fit-content;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active {
+  background-color: #363332;
+  color: #FFE8E1;
 }
 
 button {
@@ -416,6 +425,14 @@ nav .socials {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+nav .socials a {
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+nav .socials a:hover,
+nav .socials a:focus {
+  color: #fd849e;
+}
 nav .navLinks {
   margin: 0 35px 0 35px;
 }
@@ -553,7 +570,7 @@ header a:last-child {
 }
 .projects h4 {
   color: #fd8ea6;
-  font-size: clamp(1.25rem, 0.8239rem + 1.6307vw, 3.125rem);
+  font-size: clamp(1rem, 0.7239rem + 1.2307vw, 1.8rem);
 }
 .projects h5 {
   border: 3px solid #FFC4D1;
@@ -575,7 +592,7 @@ header a:last-child {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px 0 80px;
+  margin: 40px 0 80px;
 }
 
 .projectTwoFlex .projectTextContainer,
@@ -597,6 +614,39 @@ header a:last-child {
           flex-direction: column;
 }
 
+.projectLinks {
+  margin-top: 15px;
+}
+.projectLinks a:first-child {
+  margin-right: 10px;
+}
+.projectLinks .button {
+  position: relative;
+}
+.projectLinks .button:hover,
+.projectLinks .button:focus {
+  color: #000100;
+  background-color: #FFC4D1;
+  border: 2px solid #000100;
+}
+.projectLinks .button:hover span {
+  right: 0.8rem;
+}
+.projectLinks i {
+  opacity: 0;
+  position: absolute;
+  width: 1.7rem;
+  top: 28%;
+  right: 24px;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  will-change: right, opacity;
+}
+.projectLinks .button:hover i {
+  opacity: 1;
+  right: 0;
+}
+
 .projectImgContainer {
   width: 50%;
 }
@@ -610,6 +660,15 @@ header a:last-child {
   margin-top: 12px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.contact .formButton:hover,
+.contact .formButton:focus,
+.contact .formButton:active {
+  background-color: #FFE8E1;
+  color: #000100;
+  border: 2px solid #000100;
 }
 .contact h2 {
   font-weight: bold;
@@ -622,6 +681,14 @@ header a:last-child {
   display: -ms-flexbox;
   display: flex;
   margin: 40px 0 90px;
+}
+.contact ul a {
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.contact ul a:hover,
+.contact ul a:focus {
+  color: #fd849e;
 }
 .contact li {
   margin-right: 20px;

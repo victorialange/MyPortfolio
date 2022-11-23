@@ -6,7 +6,7 @@
     h4 {
         color: #fd8ea6;
         // font-weight: bold;
-        font-size: clamp(1.25rem, 0.8239rem + 1.6307vw, 3.125rem);
+        font-size: clamp(1rem, 0.7239rem + 1.2307vw, 1.8rem);
     }
     h5 {
         border: 3px solid #FFC4D1;
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px 0 80px;
+    margin: 40px 0 80px;
 }
 
 .projectTwoFlex,
@@ -36,6 +36,38 @@
     width: 42%;
     display: flex;
     flex-direction: column;
+}
+
+.projectLinks {
+    margin-top: 15px;
+    a:first-child {
+        margin-right: 10px;
+    }
+    .button {
+        position: relative;
+    }
+    .button:hover,
+    .button:focus {
+        color: variables.$black;
+        background-color: #FFC4D1;
+        border: 2px solid variables.$black;
+    }
+    .button:hover span {
+        right: .8rem;
+    }
+    i {
+        opacity: 0;
+        position: absolute;
+        width: 1.7rem;
+        top: 28%;
+        right: 24px;
+        transition: all ease-out 0.3s;
+        will-change: right, opacity;
+    }
+    .button:hover i {
+        opacity: 1;
+        right: 0;
+    }
 }
 
 

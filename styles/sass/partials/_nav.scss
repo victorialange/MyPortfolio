@@ -44,6 +44,13 @@ nav {
     }
     .socials {
         justify-content: flex-end;
+        a {
+            transition: all ease-in 0.3s;
+        }
+        a:hover,
+        a:focus {
+            color:#fd849e;
+        }
     }
     .navLinks {
         margin: 0 35px 0 35px;

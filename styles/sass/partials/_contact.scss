@@ -8,6 +8,14 @@
         background-color: variables.$black;
         margin-top: 12px;
         align-self: flex-start;
+        transition: all ease-in 0.3s;
+    }
+    .formButton:hover,
+    .formButton:focus,
+    .formButton:active {
+        background-color: #FFE8E1;
+        color: variables.$black;
+        border: 2px solid variables.$black;
     }
     h2 {
         font-weight: bold;
@@ -18,6 +26,13 @@
     ul {
         display: flex;
         margin: 40px 0 90px;
+        a {
+            transition: all ease-in 0.3s;
+        }
+        a:hover,
+        a:focus {
+            color:#fd849e;
+        }
     }
     li {
         margin-right: 20px;

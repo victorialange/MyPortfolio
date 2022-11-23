@@ -38,6 +38,14 @@ img {
     background-color: #FFC4D1;
     width: fit-content;
     align-self: center;
+    transition: all ease-in 0.3s;
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active {
+    background-color: #363332;
+    color: #FFE8E1;
 }
 
 button {
