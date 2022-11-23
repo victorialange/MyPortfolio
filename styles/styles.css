@@ -955,3 +955,8 @@ footer .wrapper {
     text-align: center;
   }
 }
+@media (max-width: 900px) {
+  nav i {
+    font-size: 1rem;
+  }
+}
