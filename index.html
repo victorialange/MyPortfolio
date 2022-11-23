@@ -329,69 +329,77 @@
         <section id="contact" class="contact">
             <!-- WRAPPER -->
             <div class="wrapper">
-                
                 <h2>Let's Get In Touch</h2>
-                <!-- FLEX CONTAINER -->
-                <div class="contactFlex">
-                    <!-- TEXT CONTAINER CONTACT -->
-                    <div class="contactTextContainer">
-                        <p>Want to discuss some of my work and qualifications or just simply say hi? Then feel free to reach out to me by filling out the contact form. I look forward to hearing from you!</p>
-                        <p>You can also check out my other activities on the following online platforms down below!</p>
-                    <!-- SOCIAL MEDIA -->
-                    <ul class="socials">
-                        <!-- Github -->
-                        <li>
-                            <a href="https://github.com/victorialange" target="_blank" aria-label="click the link to see Victoria's Github repository">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                                <span class="sr-only">Github</span>
-                            </a>
-                        </li>
-                        <!-- LinkedIn -->
-                        <li>
-                            <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank" aria-label="click the link to see Victoria's LinkedIn profile">
-                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
-                        <!-- email -->
-                        <li>
-                            <a href="mailto:victoriaj.lange@gmail.com" target="_blank" aria-label="click the link to send Victoria an email">
-                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                                <span class="sr-only">Send Email</span>
-                            </a>
-                        </li>
-                        <!-- Calendly -->
-                        <li>
-                            <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank" aria-label="click the link to schedule a meeting with Victoria on Calendly">
-                                <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-                                <span class="sr-only">Calendly</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h3>Location</h3>
-                    <p>Charlottetown, PE</p>
+                    <!-- CONTACT TEXT FLEX -->
+                    <div class="contactTextFlex">
+                        <!-- TEXT CONTAINER CONTACT -->
+                        <div class="contactTextContainer">
+                            <p>Want to discuss some of my work and qualifications or just simply say hi? Then feel free to reach out to me by filling out the contact form. I look forward to hearing from you!</p>
+                        </div><!-- END TEXT CONTAINER -->
+                        <!-- HEADING CONTAINER -->
+                        <div class="headingContainer">
+                            <h3>Contact Form</h3>
+                        </div><!-- END HEADING CONTAINER -->
+                    </div><!-- END CONTACT TEXT FLEX -->
 
-                    </div><!-- END TEXT CONTAINER -->
-                    <!-- CONTACT FORM CONTAINER -->
-                    <div class="contactFormContainer">
-                        <form action="https://formspree.io/f/mpznnvwy"
+                    <!-- FLEX CONTAINER -->
+                    <div class="contactFlex">
+                        <div class="socialsContainer">
+                            <p>You can also check out my other activities on the following online platforms down below!</p>
+                            <!-- SOCIAL MEDIA -->
+                            <ul class="socials">
+                                <!-- Github -->
+                                <li>
+                                    <a href="https://github.com/victorialange" target="_blank" aria-label="click the link to see Victoria's Github repository">
+                                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                        <span class="sr-only">Github</span>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                                <li>
+                                    <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank" aria-label="click the link to see Victoria's LinkedIn profile">
+                                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                        <span class="sr-only">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <!-- email -->
+                                <li>
+                                    <a href="mailto:victoriaj.lange@gmail.com" target="_blank" aria-label="click the link to send Victoria an email">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                        <span class="sr-only">Send Email</span>
+                                    </a>
+                                </li>
+                                <!-- Calendly -->
+                                <li>
+                                    <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank" aria-label="click the link to schedule a meeting with Victoria on Calendly">
+                                        <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+                                        <span class="sr-only">Calendly</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>Location</h3>
+                            <p>Charlottetown, PE</p>
+                        </div><!-- END SOCIALS CONTAINER -->
+                        <!-- CONTACT FORM CONTAINER -->
+                        <div class="contactFormContainer">
+                            <form action="https://formspree.io/f/mpznnvwy"
                         method="POST" aria-label="Victoria's contact form">
-                            <!-- NAME -->
-                            <label for="userName">Your Name:</label>
-                            <input type="text" id="userName" required>
-                            <!-- EMAIL -->
-                            <label for="userEmail">Your Email Adress:</label>
-                            <input type="email" id="userEmail" required>
-                            <!-- MESSAGE -->
-                            <label for="message">Your Message:</label>
-                            <textarea name="message" id="message" required></textarea>
-                            <button type="submit" class="button formButton">
-                                Send
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div><!-- END CONTACT FORM CONTAINER -->
-                </div><!-- END FLEX CONTAINER -->
+                                <!-- NAME -->
+                                <label for="userName">Your Name:</label>
+                                <input type="text" id="userName" required>
+                                <!-- EMAIL -->
+                                <label for="userEmail">Your Email Adress:</label>
+                                <input type="email" id="userEmail" required>
+                                <!-- MESSAGE -->
+                                <label for="message">Your Message:</label>
+                                <textarea name="message" id="message" required></textarea>
+                                <button type="submit" class="button formButton">
+                                    <span>Send</span>
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div><!-- END CONTACT FORM CONTAINER -->
+                    </div><!-- END FLEX CONTAINER -->
                 
                 
             </div><!-- END WRAPPER -->

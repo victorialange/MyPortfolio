@@ -54,7 +54,7 @@ nav {
     }
     .navLinks {
         margin: 0 35px 0 35px;
-        
+        width: min-content;
         a:hover,
         a:focus {
             border-bottom: 4px solid #FFC4D1;

@@ -26,6 +26,7 @@
 
 .projectTwoFlex,
 .projectFourFlex {
+    display: flex;
     .projectTextContainer {
         text-align: right;
         align-items: flex-end;

@@ -16,6 +16,7 @@ a {
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
+    font-size: clamp(0.9rem, 0.758rem + 0.6102vw, 1rem);
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 
 p {
     line-height: 1.4;
-    font-size: clamp(1rem, 0.8309rem + 0.5376vw, 1rem);
+    font-size: clamp(0.8rem, 0.8309rem + 0.5376vw, 1rem);
     letter-spacing: 1.1px;
 }
 

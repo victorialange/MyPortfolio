@@ -228,7 +228,7 @@ html {
 
 .wrapper {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -306,6 +306,7 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: clamp(0.9rem, 0.758rem + 0.6102vw, 1rem);
 }
 
 body {
@@ -315,7 +316,7 @@ body {
 
 p {
   line-height: 1.4;
-  font-size: clamp(1rem, 0.8309rem + 0.5376vw, 1rem);
+  font-size: clamp(0.8rem, 0.8309rem + 0.5376vw, 1rem);
   letter-spacing: 1.1px;
 }
 
@@ -435,6 +436,9 @@ nav .socials a:focus {
 }
 nav .navLinks {
   margin: 0 35px 0 35px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 nav .navLinks a:hover,
 nav .navLinks a:focus {
@@ -604,6 +608,12 @@ header a:last-child:hover, header a:last-child:focus {
   margin: 40px 0 80px;
 }
 
+.projectTwoFlex,
+.projectFourFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .projectTwoFlex .projectTextContainer,
 .projectFourFlex .projectTextContainer {
   text-align: right;
@@ -711,10 +721,32 @@ header a:last-child:hover, header a:last-child:focus {
   font-size: 2rem;
 }
 .contact h3 {
-  font-size: clamp(1.15rem, 0.8239rem + 1.3307vw, 1.525rem);
+  font-size: clamp(1.15rem, 0.8239rem + 1.2307vw, 1.325rem);
   margin-bottom: 20px;
   font-weight: normal;
   text-align: left;
+}
+
+.contactTextFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactTextContainer,
+.headingContainer {
+  width: 50%;
+}
+
+.headingContainer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .contactFlex {
@@ -726,18 +758,28 @@ header a:last-child:hover, header a:last-child:focus {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 40px;
 }
 
-.contactTextContainer {
+.contactTextContainer,
+.socialsContainer {
   width: 40%;
   margin-right: 15px;
+  margin-top: 20px;
+}
+
+.socialsContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .contactFormContainer {
   width: 50%;
 }
-.contactFormContainer form {
+.contactFormContainer i {
+  font-size: 1rem;
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,18 +790,22 @@ header a:last-child:hover, header a:last-child:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.contactFormContainer input,
-.contactFormContainer textarea {
+
+label {
+  width: 100%;
+}
+
+input,
+textarea {
   border: 0px;
   border-bottom: 3px solid #82899B;
   background-color: transparent;
   margin: 10px 0 40px;
+  width: 100%;
 }
-.contactFormContainer textarea {
+
+textarea {
   height: 150px;
-}
-.contactFormContainer i {
-  font-size: 1rem;
 }
 
 footer {
@@ -773,4 +819,132 @@ footer .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1900px) {
+  .wrapper {
+    max-width: 1900px;
+  }
+}
+@media (max-width: 1123px) {
+  .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutTextContainer {
+    width: 100%;
+  }
+  .aboutImgContainer {
+    width: 60%;
+  }
+  .projectTextContainer {
+    width: 45%;
+  }
+  textarea {
+    height: 175px;
+  }
+}
+@media (max-width: 1049px) {
+  .projectTextContainer,
+.projectImgContainer {
+    width: calc(50% - 15px);
+  }
+  .projectOneFlex .projectTextContainer,
+.projectThreeFlex .projectTextContainer {
+    margin-right: 15px;
+  }
+  .projectTwoFlex .projectTextContainer,
+.projectFourFlex .projectTextContainer {
+    margin-left: 15px;
+  }
+  textarea {
+    height: 200px;
+  }
+}
+@media (max-width: 979px) {
+  nav i {
+    font-size: 1.2rem;
+  }
+  .projectFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectTextContainer,
+.projectImgContainer {
+    width: 100%;
+  }
+  .projectOneFlex,
+.projectThreeFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectImgContainer {
+    margin-bottom: 30px;
+  }
+  .projectTwoFlex,
+.projectFourFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .projectOneFlex .projectTextContainer,
+.projectThreeFlex .projectTextContainer {
+    margin-right: 0;
+  }
+  .projectTwoFlex .projectTextContainer,
+.projectFourFlex .projectTextContainer {
+    margin-left: 0;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .contactTextFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactTextContainer {
+    margin-bottom: 30px;
+  }
+  .contactFormContainer,
+.socialsContainer,
+.contactTextContainer,
+.headingContainer {
+    width: 100%;
+  }
+  .socialsContainer {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .socialsContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socialsContainer h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  textarea {
+    height: 230px;
+  }
 }

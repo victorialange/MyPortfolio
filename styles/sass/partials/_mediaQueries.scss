@@ -1,1 +1,138 @@
 @use "./variables";
+
+// styles for LARGE DESKTOPS
+@media (max-width: 1900px) {
+    // WRAPPER
+    .wrapper {
+        max-width: 1900px;
+    }
+}
+
+// SMALL DESKTOPS 
+@media (max-width: 1123px) {
+    // ABOUT
+    .aboutFlex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .aboutTextContainer {
+        width: 100%;
+    }
+    .aboutImgContainer {
+        width: 60%;
+    }
+
+    // PROJECTS
+    .projectTextContainer {
+        width: 45%;
+    }
+
+    // CONTACT FORM
+    textarea {
+        height: 175px;
+    }
+}
+
+@media (max-width: 1049px) {
+    // PROJECTS
+    .projectTextContainer,
+    .projectImgContainer {
+        width: calc((100% / 2) - 15px);
+    }
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectTextContainer {
+            margin-right: 15px;
+        }
+    }
+    .projectTwoFlex,
+    .projectFourFlex {
+        .projectTextContainer {
+            margin-left: 15px;
+        }
+    }
+
+    // CONTACT FORM
+    textarea {
+        height: 200px;
+    }
+}
+
+@media(max-width: 979px) {
+    // NAV
+    nav {
+        i {
+            font-size: 1.2rem;
+        }
+    }
+    // PROJECTS
+    .projectFlex {
+        flex-direction: column;
+    }
+    .projectTextContainer,
+    .projectImgContainer {
+        width: 100%;
+    }
+    .projectOneFlex,
+    .projectThreeFlex {
+        flex-direction: column-reverse;
+    }
+    .projectImgContainer {
+        margin-bottom: 30px;
+    }
+    .projectTwoFlex,
+    .projectFourFlex {
+        flex-direction: column;
+        align-items: flex-end;
+        // .projectImgContainer {
+        //     align-self: flex-end;
+        // }
+    }
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectTextContainer {
+            margin-right: 0;
+        }
+    }
+    .projectTwoFlex,
+    .projectFourFlex {
+        .projectTextContainer {
+            margin-left: 0;
+        }
+    }
+
+    // CONTACT FORM
+    .contactFlex {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .contactTextFlex {
+        flex-direction: column;
+    }
+    .contactTextContainer {
+        margin-bottom: 30px;
+    }
+    .contactFormContainer,
+    .socialsContainer,
+    .contactTextContainer,
+    .headingContainer {
+        width: 100%;
+    }
+    .socialsContainer {
+        margin-top: 100px;
+        text-align: center;
+        ul {
+            justify-content: center;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    // CONTACT FORM
+    textarea {
+        height: 230px;
+    }
+}
