@@ -24,14 +24,28 @@ nav {
     li {
         margin-right: 20px;
     }
+    li:last-child {
+        margin-right: 0;
+    }
     i {
         font-size: 1.5rem;
     }
     .logo {
         display: flex;
         align-items: center;
+        // margin-right: 125px;
     }
     img {
         height: 40px;
+    }
+    ul,
+    .logo {
+        width: calc((100% / 3) - 70px);
+    }
+    .socials {
+        justify-content: flex-end;
+    }
+    .navLinks {
+        margin: 0 35px 0 35px;
     }
 }
