@@ -54,5 +54,12 @@ nav {
     }
     .navLinks {
         margin: 0 35px 0 35px;
+        
+        a:hover,
+        a:focus {
+            border-bottom: 4px solid #FFC4D1;
+            padding-bottom: 2.5px;
+            font-weight: bold;
+        }
     }
 }

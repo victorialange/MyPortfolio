@@ -52,7 +52,8 @@
         background-color: #FFC4D1;
         border: 2px solid variables.$black;
     }
-    .button:hover span {
+    .button:hover span,
+    .button:focus span {
         right: .8rem;
     }
     i {
@@ -64,7 +65,8 @@
         transition: all ease-out 0.3s;
         will-change: right, opacity;
     }
-    .button:hover i {
+    .button:hover i,
+    .button:focus i {
         opacity: 1;
         right: 0;
     }

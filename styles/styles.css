@@ -436,6 +436,12 @@ nav .socials a:focus {
 nav .navLinks {
   margin: 0 35px 0 35px;
 }
+nav .navLinks a:hover,
+nav .navLinks a:focus {
+  border-bottom: 4px solid #FFC4D1;
+  padding-bottom: 2.5px;
+  font-weight: bold;
+}
 
 header {
   padding: 150px 0 30px;
@@ -460,6 +466,9 @@ header a:last-child {
   margin-top: 80px;
   -ms-flex-item-align: center;
       align-self: center;
+}
+header a:last-child:hover, header a:last-child:focus {
+  color: #fd849e;
 }
 
 .headerLinks {
@@ -629,7 +638,8 @@ header a:last-child {
   background-color: #FFC4D1;
   border: 2px solid #000100;
 }
-.projectLinks .button:hover span {
+.projectLinks .button:hover span,
+.projectLinks .button:focus span {
   right: 0.8rem;
 }
 .projectLinks i {
@@ -642,7 +652,8 @@ header a:last-child {
   transition: all ease-out 0.3s;
   will-change: right, opacity;
 }
-.projectLinks .button:hover i {
+.projectLinks .button:hover i,
+.projectLinks .button:focus i {
   opacity: 1;
   right: 0;
 }

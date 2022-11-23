@@ -19,6 +19,10 @@ header {
     a:last-child {
         margin-top: 80px;
         align-self: center;
+        &:hover,
+        &:focus {
+            color: #fd849e;
+        }
     }
 }
 
