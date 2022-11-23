@@ -870,6 +870,18 @@ footer .wrapper {
   nav i {
     font-size: 1.2rem;
   }
+  .skillsList li {
+    width: calc(25% - 25px);
+    text-align: center;
+    margin: 0 25px 10px 0;
+  }
+  .skillsList li:nth-child(6) {
+    margin-right: 25px;
+  }
+  .skillsList li:nth-child(4),
+.skillsList li:nth-child(8) {
+    margin-right: 0;
+  }
   .projectFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -941,10 +953,5 @@ footer .wrapper {
   }
   .socialsContainer h3 {
     text-align: center;
-  }
-}
-@media (max-width: 900px) {
-  textarea {
-    height: 230px;
   }
 }

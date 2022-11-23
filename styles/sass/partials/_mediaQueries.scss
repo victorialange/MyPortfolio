@@ -65,6 +65,24 @@
             font-size: 1.2rem;
         }
     }
+
+    // SKILLS
+    .skillsList {
+        li {
+            width: calc((100% / 4) - 25px);
+            text-align: center;
+            margin: 0 25px 10px 0;
+        }
+        li:nth-child(6) {
+            margin-right: 25px;
+        } 
+        li:nth-child(4),
+        li:nth-child(8) {
+            margin-right: 0;
+        } 
+    }
+    
+
     // PROJECTS
     .projectFlex {
         flex-direction: column;
@@ -128,11 +146,14 @@
             text-align: center;
         }
     }
+
 }
 
-@media (max-width: 900px) {
-    // CONTACT FORM
-    textarea {
-        height: 230px;
-    }
-}
+// @media (max-width: 900px) {
+//     // CONTACT FORM
+//     textarea {
+//         height: 230px;
+//     }
+// }
+
+// HAMBURGER MENU AT 800px breakpoint
