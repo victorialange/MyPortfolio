@@ -2,5 +2,31 @@
 
 .projects {
     background-color: #fff;
-    padding: 30px 0 100px;
+    padding-bottom: 100px;
+    h4 {
+        color: #DC5689;
+        // font-weight: bold;
+        font-size: clamp(1.25rem, 0.8239rem + 1.6307vw, 3.125rem);
+    }
+}
+.projectFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0 80px;
+}
+
+.projectTwoFlex {
+    .projectTextContainer {
+        text-align: right;
+    }
+}
+
+.projectTextContainer {
+    width: 40%;
+}
+
+
+.projectImgContainer {
+    width: 50%;
 }

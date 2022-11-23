@@ -25,37 +25,47 @@ body {
 
 p {
     line-height: 1.4;
+    font-size: clamp(1rem, 0.8309rem + 0.5376vw, 1rem);
+    letter-spacing: 1.1px;
 }
+
+// h1 {
+//     font-weight: normal;
+//     text-transform: uppercase;
+//     color: rgb(28, 28, 28);
+//     font-size: 1rem;
+// }
 
 h1 {
     font-weight: normal;
     text-transform: uppercase;
-    color: rgb(28, 28, 28);
-    font-size: 1rem;
 }
 
 h2 {
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-h3 {
     font-size: 0.9rem;
     font-weight: normal;
     margin: 0;
     text-align: center;
 }
 
-h4 {
+h3 {
     font-size: 1.8rem;
     text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
     text-transform: capitalize;
 }
 
 h5 {
-    font-size: 1.4rem;
     font-weight: normal;
-    margin: 0;
+    font-size: clamp(0.9375rem, 0.8665rem + 0.3551vw, 1.25rem);
+    letter-spacing: 1.2px;
 }
 
 // CONTACT
@@ -74,11 +84,11 @@ button {
 // FOOTER
 footer {
     color: #fff;
-    font-size: 0.8rem;
     p {
         margin: 0;
+        font-size: 0.8rem;
     }
     span {
-        color: variables.$lightBlue;
+        color: #FFC4D1;
     }
 }

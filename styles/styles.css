@@ -269,6 +269,9 @@ button {
   cursor: pointer;
 }
 
+section {
+  padding-top: 100px;
+}
 section .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,37 +306,40 @@ body {
 
 p {
   line-height: 1.4;
+  font-size: clamp(1rem, 0.8309rem + 0.5376vw, 1rem);
+  letter-spacing: 1.1px;
 }
 
 h1 {
   font-weight: normal;
   text-transform: uppercase;
-  color: rgb(28, 28, 28);
-  font-size: 1rem;
 }
 
 h2 {
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h3 {
   font-size: 0.9rem;
   font-weight: normal;
   margin: 0;
   text-align: center;
 }
 
-h4 {
+h3 {
   font-size: 1.8rem;
   text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0;
   text-transform: capitalize;
 }
 
 h5 {
-  font-size: 1.4rem;
   font-weight: normal;
-  margin: 0;
+  font-size: clamp(0.9375rem, 0.8665rem + 0.3551vw, 1.25rem);
+  letter-spacing: 1.2px;
 }
 
 input,
@@ -348,13 +354,13 @@ button {
 
 footer {
   color: #fff;
-  font-size: 0.8rem;
 }
 footer p {
   margin: 0;
+  font-size: 0.8rem;
 }
 footer span {
-  color: #EFAAC4;
+  color: #FFC4D1;
 }
 
 nav {
@@ -438,7 +444,7 @@ header a:last-child {
 }
 
 .about {
-  padding: 50px 0 80px;
+  padding-bottom: 80px;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -449,11 +455,11 @@ header a:last-child {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about h3 {
+.about h2 {
   margin: 0;
 }
 .about .button,
-.about h4 {
+.about h3 {
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -485,7 +491,7 @@ header a:last-child {
 
 .skills {
   background-color: #FFE8E1;
-  padding: 30px 0 60px;
+  padding-bottom: 60px;
 }
 .skills i {
   font-size: 3.5rem;
@@ -503,11 +509,18 @@ header a:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .skillsList li {
   width: calc(16.6666666667% - 25px);
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0 25px 10px 0;
+}
+.skillsList li:nth-child(6),
+.skillsList li:nth-child(12) {
+  margin-right: 0;
 }
 .skillsList .responsiveIconContainer,
 .skillsList a {
@@ -521,12 +534,40 @@ header a:last-child {
 
 .projects {
   background-color: #fff;
-  padding: 30px 0 100px;
+  padding-bottom: 100px;
+}
+.projects h4 {
+  color: #DC5689;
+  font-size: clamp(1.25rem, 0.8239rem + 1.6307vw, 3.125rem);
+}
+
+.projectFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 80px;
+}
+
+.projectTwoFlex .projectTextContainer {
+  text-align: right;
+}
+
+.projectTextContainer {
+  width: 40%;
+}
+
+.projectImgContainer {
+  width: 50%;
 }
 
 .contact {
   background-color: #FFE8E1;
-  padding: 80px 0 100px;
+  padding-bottom: 100px;
 }
 .contact .formButton {
   background-color: #000100;
@@ -534,26 +575,32 @@ header a:last-child {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-.contact h3 {
+.contact h2 {
   font-weight: bold;
-  font-size: 1.3rem;
-  text-align: start;
+  font-size: 1.8rem;
+  text-align: left;
   margin: 8px 0;
 }
 .contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
+  margin: 40px 0 90px;
 }
 .contact li {
   margin-right: 20px;
 }
-.contact p {
-  margin: 0;
+.contact p:first-child {
+  margin-top: 0;
 }
 .contact i {
   font-size: 2rem;
+}
+.contact h3 {
+  font-size: clamp(1.15rem, 0.8239rem + 1.3307vw, 1.525rem);
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: left;
 }
 
 .contactFlex {
@@ -565,7 +612,7 @@ header a:last-child {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .contactTextContainer {
@@ -592,7 +639,7 @@ header a:last-child {
   border: 0px;
   border-bottom: 3px solid #82899B;
   background-color: transparent;
-  margin: 10px 0 20px;
+  margin: 10px 0 40px;
 }
 .contactFormContainer textarea {
   height: 150px;

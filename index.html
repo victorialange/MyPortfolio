@@ -12,7 +12,7 @@
     <!-- links to google font Poppins regular & bold -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet"> 
     <!-- link to dev icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">         
 </head>
@@ -42,40 +42,43 @@
             <ul class="socials">
                 <!-- Github -->
                 <li>
-                    <a href="https://github.com/victorialange" target="_blank">
-                        <i class="fa-brands fa-github" sr-only="Victoria's Github repository"></i>
+                    <a href="https://github.com/victorialange" target="_blank" aria-label="click the link to see Victoria's Github repository">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">Github</span>
                     </a>
                 </li>
                 <!-- LinkedIn -->
                 <li>
-                    <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank">
-                        <i class="fa-brands fa-linkedin" sr-only="Victoria's LinkedIn profile"></i>
+                    <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank" aria-label="click the link to see Victoria's LinkedIn profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
                     </a>
                 </li>
                 <!-- email -->
                 <li>
-                    <a href="mailto:victoriaj.lange@gmail.com" target="_blank">
-                        <i class="fa-solid fa-envelope" sr-only="Victoria's email address"></i>
+                    <a href="mailto:victoriaj.lange@gmail.com" target="_blank" aria-label="click the link to send Victoria an email">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span class="sr-only">Send Email</span>
                     </a>
                 </li>
                 <!-- Calendly -->
                 <li>
-                    <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank">
-                        <i class="fa-solid fa-calendar" sr-only="Victoria's Calendly"></i>
+                    <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank" aria-label="click the link to schedule a meeting with Victoria on Calendly">
+                        <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+                        <span class="sr-only">Calendly</span>
                     </a>
                 </li>
             </ul>
-
         </div><!-- END WRAPPER -->
     </nav>
     <!-- HEADER -->
     <header id="header">
         <!-- WRAPPER -->
         <div class="wrapper">
-            <h2>Victoria Lange 
+            <h1>Victoria Lange 
                 <span>web developer</span>
-            </h2>
-            <p>based in Waterloo, Ontario</p>
+            </h1>
+            <!-- <p>based in Waterloo, Ontario</p> -->
             <!-- header links container -->
             <div class="headerLinks">
                 <!-- skip to Projects styled like button -->
@@ -97,14 +100,14 @@
             <div class="wrapper">
                 <!-- heading with the style of button -->
                 <div class="button">
-                    <h3>About Me</h3>
+                    <h2>About Me</h2>
                 </div><!-- END heading with the style of button -->
-                <h4>Get to know me!</h4>
+                <h3>Get to know me!</h3>
                 <!-- ABOUT FLEX CONTAINER -->
                 <div class="aboutFlex">
                     <!-- TEXT CONTAINER ABOUT -->
                     <div class="aboutTextContainer">
-                        <h5>Hi, I'm <span>Victoria</span></h5>
+                        <h4>Hi, I'm <span>Victoria</span></h4>
                         <p>I'm a front-end developer passionate about building accessible and responsive web applications and solving problems with creative and analytical thinking.</p>
                         <p>As a former competitive athlete and coach, now turned developer, I am someone who enjoys working together with other people and finding solutions in a fast-paced and intensive team environment. From my 16 years of experience as a competitve figure skater and then coach, I know what it takes to achieve success and be able to deliver satisfying results.   </p>
                     </div><!-- END TEXT CONTAINER -->
@@ -124,9 +127,9 @@
             <div class="wrapper">
                 <!-- heading with the style of button -->
                 <div class="button">
-                    <h3>Skills</h3>
+                    <h2>Skills</h2>
                 </div><!-- END heading with the style of button -->
-                <h4>My Tech Stack & Tools I Use</h4>
+                <h3>My Tech Stack & Tools I Use</h3>
                 <!-- SKILLS list -->
                 <ul class="skillsList">
                     <!-- HTML5 -->
@@ -207,9 +210,51 @@
             <div class="wrapper">
                 <!-- heading with the style of button -->
                 <div class="button">
-                    <h3>Projects</h3>
+                    <h2>Projects</h2>
                 </div><!-- END heading with the style of button -->
-                <h4>Some of my latest work</h4>
+                <h3>Some of my latest work</h3>
+                <!-- PROJECT ONE -->
+                <div class="projectFlex projectOneFlex">
+                    <!-- TEXT CONTAINER -->
+                    <div class="projectTextContainer">
+                        <h4>React app</h4>
+                        <h5>React | RESTful APIs | Javascript</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt molestiae laboriosam eaque eius, adipisci consectetur commodi deleniti doloribus quae repellendus neque aliquid! In dignissimos eos temporibus obcaecati, cumque soluta.</p>
+                    </div><!-- TEXT CONTAINER -->
+                    <!-- IMG CONTAINER -->
+                    <div class="projectImgContainer">
+                        <img src="" alt="React app project">
+                    </div>
+                </div><!-- END PROJECT ONE -->
+
+                <!-- PROJECT TWO -->
+                <div class="projectFlex projectTwoFlex">
+                    <!-- IMG CONTAINER -->
+                    <div class="projectImgContainer">
+                        <img src="" alt="MovieFlix - paired API project">
+                    </div>
+                    <!-- TEXT CONTAINER -->
+                    <div class="projectTextContainer">
+                        <h4>MovieFlix</h4>
+                        <h5>RESTful APIs | Javascript | SCSS | HTML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt molestiae laboriosam eaque eius, adipisci consectetur commodi deleniti doloribus quae repellendus neque aliquid! In dignissimos eos temporibus obcaecati, cumque soluta.</p>
+                    </div><!-- TEXT CONTAINER -->
+                </div><!-- END PROJECT TWO -->
+
+                <!-- PROJECT THREE -->
+                <div class="projectFlex projectThreeFlex">
+                    <!-- TEXT CONTAINER -->
+                    <div class="projectTextContainer">
+                        <h4>Textilee</h4>
+                        <h5>Javascript | SCSS | HTML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt molestiae laboriosam eaque eius, adipisci consectetur commodi deleniti doloribus quae repellendus neque aliquid! In dignissimos eos temporibus obcaecati, cumque soluta.</p>
+                    </div><!-- TEXT CONTAINER -->
+                    <!-- IMG CONTAINER -->
+                    <div class="projectImgContainer">
+                        <img src="" alt="Textilee - multi-page PSD conversion project">
+                    </div>
+                </div><!-- END PROJECT THREE -->
+
             </div><!-- END WRAPPER -->
         </section>
 
@@ -218,45 +263,52 @@
             <!-- WRAPPER -->
             <div class="wrapper">
                 
-                <h3>Let's Get In Touch</h3>
+                <h2>Let's Get In Touch</h2>
                 <!-- FLEX CONTAINER -->
                 <div class="contactFlex">
                     <!-- TEXT CONTAINER CONTACT -->
                     <div class="contactTextContainer">
-                        <p>Want to say hi or discuss some of my work and qualifications? Then feel free to reach out to me by filling out the contact form right here. I look forward to hearing from you!</p>
+                        <p>Want to discuss some of my work and qualifications or just simply say hi? Then feel free to reach out to me by filling out the contact form. I look forward to hearing from you!</p>
+                        <p>You can also check out my other activities on the following online platforms down below!</p>
                     <!-- SOCIAL MEDIA -->
                     <ul class="socials">
                         <!-- Github -->
                         <li>
-                            <a href="https://github.com/victorialange" target="_blank">
-                                <i class="fa-brands fa-github" sr-only="Victoria's Github repository"></i>
+                            <a href="https://github.com/victorialange" target="_blank" aria-label="click the link to see Victoria's Github repository">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
                             </a>
                         </li>
                         <!-- LinkedIn -->
                         <li>
-                            <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank">
-                                <i class="fa-brands fa-linkedin" sr-only="Victoria's LinkedIn profile"></i>
+                            <a href="https://www.linkedin.com/in/victoria-lange-064320244/" target="_blank" aria-label="click the link to see Victoria's LinkedIn profile">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
                             </a>
                         </li>
                         <!-- email -->
                         <li>
-                            <a href="mailto:victoriaj.lange@gmail.com" target="_blank">
-                                <i class="fa-solid fa-envelope" sr-only="Victoria's email address"></i>
+                            <a href="mailto:victoriaj.lange@gmail.com" target="_blank" aria-label="click the link to send Victoria an email">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <span class="sr-only">Send Email</span>
                             </a>
                         </li>
                         <!-- Calendly -->
                         <li>
-                            <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank">
-                                <i class="fa-solid fa-calendar" sr-only="Victoria's Calendly"></i>
+                            <a href="https://calendly.com/victoria-lange/30min?back=1&month=2022-11" target="_blank" aria-label="click the link to schedule a meeting with Victoria on Calendly">
+                                <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+                                <span class="sr-only">Calendly</span>
                             </a>
                         </li>
                     </ul>
+                    <h3>Location</h3>
+                    <p>Charlottetown, PE</p>
 
                     </div><!-- END TEXT CONTAINER -->
                     <!-- CONTACT FORM CONTAINER -->
                     <div class="contactFormContainer">
                         <form action="https://formspree.io/f/mpznnvwy"
-                        method="POST">
+                        method="POST" aria-label="Victoria's contact form">
                             <!-- NAME -->
                             <label for="userName">Your Name:</label>
                             <input type="text" id="userName" required>
@@ -271,8 +323,8 @@
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </form>
-                    </div>
-                </div>
+                    </div><!-- END CONTACT FORM CONTAINER -->
+                </div><!-- END FLEX CONTAINER -->
                 
                 
             </div><!-- END WRAPPER -->
