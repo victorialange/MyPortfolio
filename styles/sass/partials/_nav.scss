@@ -52,6 +52,7 @@ nav {
             color:#fd849e;
         }
     }
+    // main nav ul
     .navLinks {
         margin: 0 35px 0 35px;
         width: min-content;
@@ -61,5 +62,18 @@ nav {
             padding-bottom: 2.5px;
             font-weight: bold;
         }
+    }
+}
+
+
+// hamburger menu only visible with tablet and mobile
+.hamburgerMenu {
+    display: none;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    i {
+        font-size: 1.4rem;
     }
 }

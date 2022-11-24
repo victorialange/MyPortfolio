@@ -447,6 +447,21 @@ nav .navLinks a:focus {
   font-weight: bold;
 }
 
+.hamburgerMenu {
+  display: none;
+  background-color: inherit;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hamburgerMenu i {
+  font-size: 1.4rem;
+}
+
 header {
   padding: 150px 0 30px;
   background-color: #FFE8E1;
@@ -638,6 +653,9 @@ header a:last-child:hover, header a:last-child:focus {
 }
 .projectLinks a:first-child {
   margin-right: 10px;
+}
+.projectLinks a {
+  display: inline-block;
 }
 .projectLinks .button {
   position: relative;
@@ -958,5 +976,54 @@ footer .wrapper {
 @media (max-width: 900px) {
   nav i {
     font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .navLinks {
+    background: transparent;
+    position: absolute;
+    right: -100%;
+    top: 60px;
+    width: 50%;
+    height: calc(100% - 100px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .navLinks li {
+    text-align: center;
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  nav .wrapper {
+    position: relative;
+  }
+  nav .socials {
+    display: none;
+  }
+  nav .navLinks {
+    margin: 0;
+  }
+  .navActive {
+    right: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
