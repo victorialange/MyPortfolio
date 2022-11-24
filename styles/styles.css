@@ -378,9 +378,9 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10;
-  background: rgba(255, 232, 225, 0.48);
+  background-color: #FFE8E1;
 }
-nav .wrapper {
+nav .navFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,6 +391,7 @@ nav .wrapper {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
+  position: relative;
 }
 nav ul {
   display: -webkit-box;
@@ -413,6 +414,7 @@ nav .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 15px;
 }
 nav img {
   height: 40px;
@@ -425,6 +427,7 @@ nav .socials {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 20px;
 }
 nav .socials a {
   -webkit-transition: all ease-in 0.3s;
@@ -451,15 +454,13 @@ nav .navLinks a:focus {
   display: none;
   background-color: inherit;
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.hamburgerMenu:hover, .hamburgerMenu:focus {
+  color: #fd849e;
 }
 .hamburgerMenu i {
   font-size: 1.4rem;
+  margin-right: 50px;
 }
 
 header {
@@ -597,8 +598,9 @@ header a:last-child:hover, header a:last-child:focus {
   padding-bottom: 10px;
 }
 .projects h4 {
-  color: #fd8ea6;
+  color: #363332;
   font-size: clamp(1rem, 0.7239rem + 1.2307vw, 1.8rem);
+  font-weight: bold;
 }
 .projects h5 {
   border: 3px solid #FFC4D1;
@@ -741,7 +743,7 @@ header a:last-child:hover, header a:last-child:focus {
 .contact h3 {
   font-size: clamp(1.15rem, 0.8239rem + 1.2307vw, 1.325rem);
   margin-bottom: 20px;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -980,14 +982,20 @@ footer .wrapper {
 }
 @media (max-width: 800px) {
   .hamburgerMenu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 10px;
   }
   .navLinks {
     background: transparent;
     position: absolute;
     right: -100%;
     top: 60px;
-    width: 50%;
     height: calc(100% - 100px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1002,6 +1010,7 @@ footer .wrapper {
     padding: 0;
     -webkit-transition: all 400ms;
     transition: all 400ms;
+    overflow-x: hidden;
   }
   .navLinks li {
     text-align: center;
@@ -1019,11 +1028,23 @@ footer .wrapper {
   }
   nav .navLinks {
     margin: 0;
+    width: 100%;
+    background-color: #FFE8E1;
+  }
+  nav .navLinks a:hover,
+nav .navLinks a:focus {
+    border-bottom: 0;
+    padding-bottom: 0;
+    color: #fd849e;
+    font-weight: bold;
   }
   .navActive {
-    right: 0;
+    right: 10px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .headerDown {
+    padding-top: 200px;
   }
 }

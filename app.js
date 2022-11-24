@@ -5,20 +5,25 @@
 const burgerMenu = document.querySelector(".hamburgerMenu i");
 const navLinks = document.querySelector(".navLinks");
 
+//add another class to header when user click icon
+const header= document.querySelector("header");
+
 // function
 function toggleNav() {
     burgerMenu.classList.toggle("fa-bars");
     burgerMenu.classList.toggle("fa-times");
     navLinks.classList.toggle("navActive");
+    header.classList.toggle("headerDown")
 }
 
 // call function after user clicks on icon
 // event listener
 burgerMenu.addEventListener("click", () => {
     toggleNav();
+    
 });
 
-// toggle again when user click nav link
+// toggle again when user clicks nav link
 const navLinkOne = document.querySelector(".navLinkOne");
 const navLinkTwo = document.querySelector(".navLinkTwo");
 const navLinkThree = document.querySelector(".navLinkThree");
@@ -37,3 +42,7 @@ navLinkThree.addEventListener("click", () => {
 navLinkFour.addEventListener("click", () => {
     toggleNav();
 });
+
+
+
+// event listener

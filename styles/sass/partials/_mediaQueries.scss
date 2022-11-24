@@ -169,7 +169,10 @@
 @media (max-width: 800px) {
     // HAMBURGER MENU visible
     .hamburgerMenu {
-        display: block;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 10px;
     }
     
     // regular nav
@@ -179,13 +182,14 @@
         right: -100%;
         // right: 0;
         top: 60px;
-        width: 50%;
+        // width: 50%;
         height: calc(100% - 100px);
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         padding: 0;
         transition: all 400ms;
+        overflow-x: hidden;
         li {
             text-align: center;
             margin: 0;
@@ -202,12 +206,23 @@
         }
         .navLinks {
             margin: 0;
-            // width: 100%;
+            width: 100%;
+            background-color: #FFE8E1;
+            a:hover,
+            a:focus {
+                border-bottom: 0;
+                padding-bottom: 0;
+                color: #fd849e;
+                font-weight: bold;
+            }
         }
     }
     .navActive {
-        right: 0;
+        right: 10px;
         height: fit-content;
        
+    }
+    .headerDown {
+        padding-top: 200px;
     }
 }
