@@ -756,6 +756,22 @@ header a:last-child:hover, header a:last-child:focus {
 .projects p {
   margin-top: 0;
 }
+.projects p a {
+  font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
+  font-weight: bold;
+  color: #363332;
+}
+.projects p a:first-child:hover, .projects p a:first-child:focus {
+  color: #fd849e;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  background: none;
+}
+.projects p a:hover, .projects p a:focus {
+  border-bottom: 4px solid #FFC4D1;
+  background-color: #FFC4D1;
+  padding-bottom: 0.5px;
+}
 
 .projectFlex {
   display: -webkit-box;

@@ -16,6 +16,24 @@
     }
     p {
         margin-top: 0;
+        a {
+            font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
+            font-weight: bold;
+            color: variables.$lightBlack;
+            &:first-child:hover,
+            &:first-child:focus {
+                color: variables.$iconHover;
+                border-bottom: 0px;
+                padding-bottom: 0px;
+                background: none;
+            }
+            &:hover,
+            &:focus {
+                border-bottom: 4px solid variables.$headingBackground;
+                background-color: variables.$headingBackground;
+                padding-bottom: 0.5px;
+            }
+        }
     }
 }
 .projectFlex {
