@@ -54,6 +54,11 @@ i:focus,
 .slideOut a:hover,
 .slideOut a:focus {
     color: variables.$iconHover;
+}
+
+.hamburgerMenu:hover,
+.hamburgerMenu:focus {
+    color: variables.$iconHover;
     &:not(:hover)
     &:not(:focus) {
         color: variables.$black;

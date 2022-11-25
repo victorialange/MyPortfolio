@@ -267,9 +267,10 @@ header,
   background-color: #FAF4F4;
 }
 
-i {
-  -webkit-transition: all ease-in 0.3s;
-  transition: all ease-in 0.3s;
+a,
+button {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
 }
 
 i:hover,
@@ -632,9 +633,6 @@ header a:last-child {
   margin-top: 80px;
   -ms-flex-item-align: center;
       align-self: center;
-}
-header a:last-child:hover, header a:last-child:focus {
-  color: #fd849e;
 }
 
 .headerLinks {
@@ -1211,10 +1209,7 @@ footer .wrapper {
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  .hamburgerMenu:hover, .hamburgerMenu:focus {
-    color: #fd849e;
-  }
-  .hamburgerMenu:not(:hover) .hamburgerMenu:not(:focus) {
+  .hamburgerMenu:not(:hover) {
     color: #000100;
   }
   .slideOut {
@@ -1247,6 +1242,9 @@ footer .wrapper {
     padding: 20px 0 20px;
     font-size: 1.4rem;
     font-weight: bold;
+  }
+  .slideOut a:hover, .slideOut a:focus {
+    color: #fd849e;
   }
   .slideOut li {
     text-align: center;

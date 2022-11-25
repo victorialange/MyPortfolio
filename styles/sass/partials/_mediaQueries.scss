@@ -236,14 +236,9 @@
         top: 20px;
         right: 10px;
         transition: all 400ms;
-        &:hover,
-        &:focus {
-            color: variables.$iconHover;
-        }
-        &:not(:hover)
-        &:not(:focus) {
-            color: variables.$black;
-        }
+        // &:not(:hover) {
+        //     color: variables.$black;
+        // }
     }
 
     // SLIDE OUT MENU
@@ -267,6 +262,10 @@
             padding: 20px 0 20px;
             font-size: 1.4rem;
             font-weight: bold;
+            &:hover,
+            &:focus {
+                color: variables.$iconHover;
+            }
         }
         li {
             text-align: center;
@@ -284,9 +283,13 @@
         height: 100%;
         z-index: 10;
         background-color: variables.$overlayBackground;
+        // .hamburgerMenu:not(:hover).hamburgerMenu:not(:focus) {
+        //     color: variables.$black;
+        // }
         .slideOut {
             right: 0;
         }
+        
 
         // rotate button for cool effect
         .fa-bars {
