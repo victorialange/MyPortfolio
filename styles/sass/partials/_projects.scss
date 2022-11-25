@@ -1,16 +1,16 @@
 @use "./variables";
 
 .projects {
-    background-color: #fff;
+    // background-color: #fff;
     padding-bottom: 10px;
     h4 {
-        color: #363332;
+        color: variables.$lightBlack;
         // font-weight: bold;
         font-size: clamp(1.4rem, 0.7239rem + 1.2307vw, 1.8rem);
         font-weight: bold;
     }
     h5 {
-        border: 3px solid #FFC4D1;
+        border: 3px solid variables.$headingBackground;
         padding: 5px 10px;
         width: fit-content;
     }
@@ -53,12 +53,17 @@
     }
     .button {
         position: relative;
+        transition: all ease-in 0.5s;
     }
     .button:hover,
     .button:focus {
         color: variables.$black;
-        background-color: #FFC4D1;
+        background-color: variables.$secondaryBackground;
         border: 2px solid variables.$black;
+        &:hover i,
+        &:focus i {
+            color: variables.$black;
+        }
     }
     .button:hover span,
     .button:focus span {

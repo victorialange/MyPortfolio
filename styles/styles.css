@@ -262,6 +262,11 @@ header,
   background-color: #FFE8E1;
 }
 
+.about,
+.projects {
+  background-color: #FAF4F4;
+}
+
 i {
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
@@ -326,13 +331,23 @@ ul {
   padding: 0;
 }
 
-a {
+a,
+.formButton span,
+.formButton i {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: clamp(0.9rem, 0.858rem + 0.6102vw, 1.325rem);
+}
+
+.formButton span,
+.formButton i {
+  color: #FFE8E1;
+}
+.formButton:hover span, .formButton:focus span, .formButton:hover i, .formButton:focus i {
+  color: #000100;
 }
 
 body {
@@ -342,7 +357,8 @@ body {
 
 p,
 label,
-input {
+input,
+textarea {
   line-height: 1.4;
   font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
   letter-spacing: 1.1px;
@@ -382,7 +398,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.375rem, 1.0938rem + 2.563vw, 3.0125rem);
+  font-size: clamp(1.275rem, 1.0938rem + 1.563vw, 2.8125rem);
   font-weight: normal;
   margin: 0;
   text-transform: capitalize;
@@ -400,16 +416,12 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-.formButton {
-  color: #fff;
-}
-
 footer {
-  color: #fff;
+  color: #FAF4F4;
 }
 footer p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.6309rem + 0.4376vw, 1rem);
 }
 footer span {
   color: #FFC4D1;
@@ -702,7 +714,6 @@ header a:last-child {
 }
 
 .projects {
-  background-color: #fff;
   padding-bottom: 10px;
 }
 .projects h4 {
@@ -774,12 +785,19 @@ header a:last-child {
 }
 .projectLinks .button {
   position: relative;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 .projectLinks .button:hover,
 .projectLinks .button:focus {
   color: #000100;
-  background-color: #FFC4D1;
+  background-color: #FAF4F4;
   border: 2px solid #000100;
+}
+.projectLinks .button:hover:hover i, .projectLinks .button:hover:focus i,
+.projectLinks .button:focus:hover i,
+.projectLinks .button:focus:focus i {
+  color: #000100;
 }
 .projectLinks .button:hover span,
 .projectLinks .button:focus span {
@@ -1222,6 +1240,9 @@ footer .wrapper {
 .projectThreeFlex .projectLinks a {
     width: 40%;
   }
+  footer p {
+    text-align: center;
+  }
 }
 @media (max-width: 680px) {
   .skillsList li {
@@ -1270,10 +1291,18 @@ footer .wrapper {
     width: 50%;
   }
 }
+@media (max-width: 505px) {
+  .projectThreeFlex h5 {
+    width: 87%;
+  }
+}
 @media (max-width: 490px) {
   .projectOneFlex .projectLinks a,
 .projectThreeFlex .projectLinks a {
     width: 57%;
+  }
+  .projectThreeFlex h5 {
+    width: 92%;
   }
 }
 @media (max-width: 429px) {
@@ -1285,10 +1314,15 @@ footer .wrapper {
     padding-bottom: 50px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 400px) {
   .projectOneFlex .projectLinks a,
 .projectThreeFlex .projectLinks a {
     width: 70%;
+  }
+  .projectOneFlex h5,
+.projectTwoFlex h5,
+.projectFourFlex h5 {
+    width: 77%;
   }
 }
 @media (max-width: 395px) {

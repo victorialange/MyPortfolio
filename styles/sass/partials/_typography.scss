@@ -11,12 +11,26 @@ ul {
     padding: 0;
 }
   
-a {
+a,
+.formButton span,
+.formButton i {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
     font-size: clamp(0.9rem, 0.858rem + 0.6102vw, 1.325rem);
+}
+.formButton {
+    span,
+    i {
+        color: variables.$primaryBackground;
+    }
+    &:hover span,
+    &:focus span,
+    &:hover i,
+    &:focus i {
+        color: variables.$black;
+    }
 }
 
 body {
@@ -26,7 +40,8 @@ body {
 
 p,
 label,
-input {
+input,
+textarea {
     line-height: 1.4;
     font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
     letter-spacing: 1.1px;
@@ -75,7 +90,7 @@ h3 {
 
 h4 {
     // font-size: 1.4rem;
-    font-size: clamp(1.375rem, 1.0938rem + 2.563vw, 3.0125rem);
+    font-size: clamp(1.275rem, 1.0938rem + 1.563vw, 2.8125rem);
     font-weight: normal;
     margin: 0;
     text-transform: capitalize;
@@ -96,18 +111,14 @@ button {
     font-family: variables.$baseFont;
 }
 
-.formButton {
-    color: #fff;
-}
-
 // FOOTER
 footer {
-    color: #fff;
+    color: variables.$secondaryBackground;
     p {
         margin: 0;
-        font-size: 0.8rem;
+        font-size: clamp(0.8rem, 0.6309rem + 0.4376vw, 1rem);
     }
     span {
-        color: #FFC4D1;
+        color: variables.$headingBackground;
     }
 }

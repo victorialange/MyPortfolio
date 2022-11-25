@@ -50,4 +50,18 @@ navLinkFive.addEventListener("click", () => {
 });
 
 
-// event listener
+// event listener for clearing input once form submitted
+const formEl = document.querySelector("form");
+const inputName = document.querySelector("input[name=userName]");
+const inputEmail = document.querySelector("input[name=userEmail]");
+const textArea = document.querySelector("textarea");
+
+
+formEl.addEventListener("submit", (event) => {
+    event.preventDefault();
+    inputName.value = "";
+    inputEmail.value = "";
+    textArea.value = "";
+})
+
+

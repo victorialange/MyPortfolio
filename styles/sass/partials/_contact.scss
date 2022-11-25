@@ -23,13 +23,6 @@
     ul {
         display: flex;
         margin: 40px 0 60px;
-        // a {
-        //     transition: all ease-in 0.3s;
-        // }
-        // a:hover,
-        // a:focus {
-        //     color:#fd849e;
-        // }
     }
     li {
         margin-right: 20px;
@@ -70,23 +63,6 @@
     width: 85%;
 }
 
-// .headingContainer {
-//     height: fit-content;
-//     align-self: center;
-// }
-
-// // contact flex
-// .contactFlex {
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-// }
-
-// .socialsContainer {
-//     width: 100%;
-//     // margin-right: 15px;
-//     margin-top: 20px;
-// }
 
 .socialsContainer {
     display: flex;
@@ -117,7 +93,7 @@ label {
 input,
 textarea {
     border: 0px;
-    border-bottom: 3px solid #82899B;
+    border-bottom: 3px solid variables.$grey;
     background-color: transparent;
     margin: 10px 0 40px;
     width: 100%;

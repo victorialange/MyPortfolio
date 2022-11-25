@@ -308,6 +308,12 @@
             width: 40%;
         }
     }
+    // FOOTER copyright
+    footer {
+        p {
+            text-align: center;
+        }
+    }
 }
 
 
@@ -383,12 +389,26 @@
     }
 }
 
+@media (max-width: 505px) {
+    // PROJECTS
+    .projectThreeFlex {
+        h5 {
+            width: 87%;
+        }
+    }
+}
+
 @media (max-width: 490px) {
     // PROJECTS
     .projectOneFlex,
     .projectThreeFlex {
         .projectLinks a {
             width: 57%;
+        }
+    }
+    .projectThreeFlex {
+        h5 {
+            width: 92%;
         }
     }
 }
@@ -407,12 +427,19 @@
     }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 400px) {
     // PROJECTS
     .projectOneFlex,
     .projectThreeFlex {
         .projectLinks a {
             width: 70%;
+        }
+    }
+    .projectOneFlex,
+    .projectTwoFlex,
+    .projectFourFlex {
+        h5 {
+            width: 77%;
         }
     }
 }

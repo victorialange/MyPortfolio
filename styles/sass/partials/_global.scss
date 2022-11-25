@@ -31,13 +31,18 @@ img {
     display: block;
 }
 
-// BACKGROUND
+// BACKGROUNDS
 .mainNav,
 .hamburgerNav,
 header,
 .skills,
 .contact {
     background-color: variables.$primaryBackground;
+}
+
+.about,
+.projects {
+    background-color: variables.$secondaryBackground;
 }
 
 // icon hover
@@ -67,8 +72,8 @@ i:focus,
 a.button:hover,
 a.button:focus,
 a.button:active {
-    background-color: #363332;
-    color: #FFE8E1;
+    background-color: variables.$lightBlack;
+    color: variables.$primaryBackground;
 }
 
 button {
