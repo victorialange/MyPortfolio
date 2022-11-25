@@ -1,13 +1,16 @@
 @use "./variables";
 
-nav {
+.mainNav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
+    height: 100px;
+    display: flex;
+    align-items: center;
     // background: rgba(255, 232, 225, 0.48);
 
-    background-color: #FFE8E1;
+    // background-color: #FFE8E1;
     
     // background: rgba(135, 81, 81, 0.2);
     // background: rgba(255, 255, 255, 0.2);
@@ -15,7 +18,7 @@ nav {
     // backdrop-filter: blur(7.4px);
     // -webkit-backdrop-filter: blur(7.4px);
     // border: 1px solid rgba(135, 81, 81, 0.3);
-    .navFlex {
+    .wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,9 +42,6 @@ nav {
         align-items: center;
         margin-left: 15px;
     }
-    img {
-        height: 40px;
-    }
     ul,
     .logo {
         width: calc((100% / 3) - 70px);
@@ -49,13 +49,6 @@ nav {
     .socials {
         justify-content: flex-end;
         margin-right: 20px;
-        a {
-            transition: all ease-in 0.3s;
-        }
-        a:hover,
-        a:focus {
-            color:#fd849e;
-        }
     }
     // main nav ul
     .navLinks {
@@ -63,26 +56,59 @@ nav {
         width: min-content;
         a:hover,
         a:focus {
-            border-bottom: 4px solid #FFC4D1;
+            border-bottom: 4px solid variables.$headingBackground;
             padding-bottom: 2.5px;
             font-weight: bold;
         }
     }
 }
 
+// LOGO
+.logo {
+    // make logo animated
+    // inspiration taken from beating heart animation from stack overflow: https://stackoverflow.com/questions/34762009/pulsing-heart-css-animation
+
+    &:visited img,
+    &:hover img,
+    &:active img,
+    &:focus img {
+        animation-name: logoFadeInOut; 
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        @keyframes logoFadeInOut {
+            0% {transform: scale(1);}
+            25% {transform: scale(.97);}
+            35% {transform: scale(.9);}
+            45% {transform: scale(1.1);}
+            55% {transform: scale(.9);}
+            65% {transform: scale(1.1);}
+            75% {transform: scale(1.03);}
+            100% {transform: scale(1);}
+        }
+    }
+    img {
+        height: 40px;
+    } 
+} 
+
 
 // hamburger menu only visible with tablet and mobile
 .hamburgerMenu {
-    display: none;
+    // display: none;
     background-color: inherit;
     border: none;
     // margin-right: 20px;
-    &:hover,
-    &:focus {
-        color:#fd849e;
-    }
+    // i:hover,
+    // i:focus {
+    //     color:#fd849e;
+    // }
     i {
         font-size: 1.4rem;
-        margin-right: 50px;
+        // margin-right: 50px;
     }
+}
+
+// slide out nav
+.hamburgerNav {
+    display: none;
 }

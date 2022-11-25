@@ -2,8 +2,11 @@
 
 // contact section
 .contact {
-    background-color: #FFE8E1;
+    // background-color: #FFE8E1;
     padding-bottom: 100px;
+    form {
+        margin-top: 30px;
+    }
     .formButton {
         background-color: variables.$black;
         margin-top: 12px;
@@ -13,26 +16,20 @@
     .formButton:hover,
     .formButton:focus,
     .formButton:active {
-        background-color: #FFE8E1;
+        background-color: variables.$primaryBackground;
         color: variables.$black;
         border: 2px solid variables.$black;
     }
-    h2 {
-        font-weight: bold;
-        font-size: 1.8rem;
-        text-align: left;
-        margin: 8px 0;
-    }
     ul {
         display: flex;
-        margin: 40px 0 90px;
-        a {
-            transition: all ease-in 0.3s;
-        }
-        a:hover,
-        a:focus {
-            color:#fd849e;
-        }
+        margin: 40px 0 60px;
+        // a {
+        //     transition: all ease-in 0.3s;
+        // }
+        // a:hover,
+        // a:focus {
+        //     color:#fd849e;
+        // }
     }
     li {
         margin-right: 20px;
@@ -51,43 +48,59 @@
     }
 }
 
-// contact text flex
-.contactTextFlex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contactTextContainer,
-.headingContainer {
-    width: calc((100% / 2));
-}
-
-.headingContainer {
-    height: fit-content;
-    align-self: center;
-}
-
 // contact flex
 .contactFlex {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .contactTextContainer,
 .socialsContainer {
-    width: 40%;
-    margin-right: 15px;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 30px;
+    p {
+        margin-bottom: 0;
+    }
 }
 
+.contactTextContainer {
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+// .headingContainer {
+//     height: fit-content;
+//     align-self: center;
+// }
+
+// // contact flex
+// .contactFlex {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
+
+// .socialsContainer {
+//     width: 100%;
+//     // margin-right: 15px;
+//     margin-top: 20px;
+// }
+
 .socialsContainer {
-    // margin-top: 50px;
-    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 120px;
+    p {
+        text-align: center;
+    }
 }
 
 .contactFormContainer {
-    width: 50%;
+    width: 85%;
     i {
         font-size: 1rem;
     }

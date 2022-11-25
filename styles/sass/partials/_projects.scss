@@ -6,7 +6,7 @@
     h4 {
         color: #363332;
         // font-weight: bold;
-        font-size: clamp(1rem, 0.7239rem + 1.2307vw, 1.8rem);
+        font-size: clamp(1.4rem, 0.7239rem + 1.2307vw, 1.8rem);
         font-weight: bold;
     }
     h5 {
@@ -41,7 +41,10 @@
 }
 
 .projectLinks {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
+    // justify-content: space-between;
     a:first-child {
         margin-right: 10px;
     }

@@ -1,12 +1,58 @@
 @use "./variables";
 
 // styles for LARGE DESKTOPS
-@media (max-width: 1900px) {
+@media (min-width: 1500px) {
     // WRAPPER
     .wrapper {
         max-width: 1900px;
     }
+    // HEADER
+    header {
+        padding: 200px 0 60px;
+    }
+    
+    // PROJECTS
+    .projectTextContainer,
+    .projectImgContainer {
+        width: calc(50% - 20px);
+    }
+
+    // CONTACT
+    .contactFormContainer,
+    .contactTextContainer {
+        width: 70%;
+    }
+    .contactTextContainer {
+        margin-bottom: 30px;
+    }
+    .contact {
+        form {
+            margin-top: 50px;
+        }
+    }
 }
+
+// medium DESKTOPS
+@media (max-width: 1270px) {
+    // PROJECTS
+    .projectLinks {
+        flex-direction: column;
+        a {
+            align-self: flex-start;
+        }
+        a:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    .projectOneFlex a,
+    .projectThreeFlex a {
+        width: 60%;
+    }
+    .projectTwoFlex a,
+    .projectFourFlex a {
+        width: 100%;
+    }
+} 
 
 // SMALL DESKTOPS 
 @media (max-width: 1123px) {
@@ -111,6 +157,9 @@
         .projectTextContainer {
             margin-right: 0;
         }
+        .projectLinks a {
+            width: 35%;
+        }
     }
     .projectTwoFlex,
     .projectFourFlex {
@@ -118,15 +167,9 @@
             margin-left: 0;
         }
     }
+    
 
     // CONTACT FORM
-    .contactFlex {
-        flex-direction: column-reverse;
-        margin-top: 30px;
-    }
-    .contactTextFlex {
-        flex-direction: column;
-    }
     .contactTextContainer {
         margin-bottom: 30px;
     }
@@ -139,22 +182,11 @@
     .socialsContainer {
         margin-top: 100px;
         text-align: center;
-        ul {
-            justify-content: center;
-        }
         h3 {
             text-align: center;
         }
     }
-
 }
-
-// @media (max-width: 900px) {
-//     // CONTACT FORM
-//     textarea {
-//         height: 230px;
-//     }
-// }
 
 @media (max-width: 900px) {
     // NAV
@@ -167,29 +199,70 @@
 
 // HAMBURGER MENU AT 800px breakpoint
 @media (max-width: 800px) {
+    .wrapper {
+        max-width: 800px;
+    }
     // HAMBURGER MENU visible
+    .hamburgerNav {
+        z-index: 10;
+        right: 0;
+        position: fixed;
+        top: 0;
+        left:0;
+        display: unset;
+        height: 80px; 
+    }
+    // FLEX LOGO & BURGER
+    .logoBurgerFlex {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .logo {
+            position: absolute;
+            top: 15px;
+        }
+    }
+
+    // make logo disappear when menu opened
+    .noLogo {
+        left: -100%;
+    }
+    
+    // HAMBURGER BUTTON
     .hamburgerMenu {
         display: flex;
         align-items: center;
         position: absolute;
+        top: 20px;
         right: 10px;
-    }
-    
-    // regular nav
-    .navLinks {
-        background: transparent;
-        position: absolute;
-        right: -100%;
-        // right: 0;
-        top: 60px;
-        // width: 50%;
-        height: calc(100% - 100px);
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
         transition: all 400ms;
-        overflow-x: hidden;
+        &:not(:hover) {
+            color: variables.$black;
+        }
+    }
+
+    // SLIDE OUT MENU
+    .slideOut {
+        top: 60px;
+        right: -100%;
+        position: absolute;
+        transition: all 400ms;
+        width: 100%;
+        // WRAPPER AS FLEX CONTAINER
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        // MENU ITEMS
+        a {
+            display: inline-block;
+            padding: 20px 0 20px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
         li {
             text-align: center;
             margin: 0;
@@ -197,32 +270,173 @@
             margin-bottom: 10px;
         }
     }
-    nav {
-        .wrapper {
-            position: relative;
-        }
-        .socials {
-            display: none;
-        }
-        .navLinks {
-            margin: 0;
-            width: 100%;
-            background-color: #FFE8E1;
-            a:hover,
-            a:focus {
-                border-bottom: 0;
-                padding-bottom: 0;
-                color: #fd849e;
-                font-weight: bold;
-            }
-        }
+    
+    // REGULAR NAV
+    .mainNav {
+        display: none;
     }
     .navActive {
-        right: 10px;
-        height: fit-content;
-       
+        height: 100%;
+        z-index: 10;
+        background-color: variables.$overlayBackground;
+        .slideOut {
+            right: 0;
+        }
+
+        // rotate button for cool effect
+        .fa-bars {
+            transform: rotate(90deg);
+        }
+        .fa-times {
+            transform: rotate(-90deg);
+        }
     }
-    .headerDown {
-        padding-top: 200px;
+}
+
+// smaller tablet
+@media (max-width: 732px) {
+    // HEADER
+    header {
+        span {
+            font-size: clamp(2.3rem, 1.877rem + 1.714vw, 2.5rem);
+        }
+    }
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 40%;
+        }
+    }
+}
+
+
+@media (max-width: 680px) {
+    // SKILLS
+    .skillsList {
+        li {
+            width: calc((100% / 3) - 25px);
+            // text-align: center;
+            // margin: 0 25px 10px 0;
+        }
+        li:nth-child(4),
+        li:nth-child(8) {
+            margin-right: 25px;
+        } 
+        li:nth-child(3),
+        li:nth-child(6),
+        li:nth-child(9) {
+            margin-right: 0;
+        } 
+    }
+
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 45%;
+        }
+    }
+
+    // CONTACT
+    .socialsContainer {
+        margin-top: 80px;
+        ul {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// mobile screen sizes
+@media (max-width: 550px) {
+    // sections padding top
+    section {
+        padding-top: 70px;
+    }
+
+    // SKILLS
+    .skillsList {
+        li {
+            width: calc((100% / 2) - 25px);
+            // text-align: center;
+            // margin: 0 25px 10px 0;
+        }
+        li:nth-child(3),
+        li:nth-child(9) {
+            margin-right: 25px;
+        } 
+        li:nth-child(2),
+        li:nth-child(4),
+        li:nth-child(6),
+        li:nth-child(8),
+        li:nth-child(10) {
+            margin-right: 0;
+        } 
+    }
+
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 57%;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 62%;
+        }
+    }
+    // Contact padding-bottom
+    .contact {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 395px) {
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 325px) {
+    // HEADER padding-top
+    header {
+        padding-top: 110px;
+    }
+    // ABOUT, SKILLS padding-bottom
+    .about {
+        padding-bottom: 60px;
+    }
+    .skills {
+        padding-bottom: 50px;
     }
 }

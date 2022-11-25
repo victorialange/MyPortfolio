@@ -31,11 +31,34 @@ img {
     display: block;
 }
 
+// BACKGROUND
+.mainNav,
+.hamburgerNav,
+header,
+.skills,
+.contact {
+    background-color: variables.$primaryBackground;
+}
+
+// icon hover
+i {
+    transition: all ease-in 0.3s;
+}
+i:hover,
+i:focus,
+.slideOut a:hover,
+.slideOut a:focus {
+    color: variables.$iconHover;
+    &:not(:hover) {
+        color: variables.$black;
+    }
+}
+
 // buttons
 .button {
     padding: 10px 36px;
     border: 2px solid transparent;
-    background-color: #FFC4D1;
+    background-color: variables.$headingBackground;
     width: fit-content;
     align-self: center;
     transition: all ease-in 0.3s;
