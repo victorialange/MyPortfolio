@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    top: 80px;
+    top: 100px;
 }
 
 // img
@@ -54,18 +54,28 @@ i:focus,
 .slideOut a:hover,
 .slideOut a:focus {
     color: variables.$iconHover;
-    &:not(:hover) {
+    &:not(:hover)
+    &:not(:focus) {
         color: variables.$black;
     }
 }
 
+.socials a:hover,
+.socials a:focus {
+    color: variables.$iconHover;
+}
+
+.skills i:hover,
+.skills i:focus {
+    color: variables.$black;
+}
 // buttons
 .button {
     padding: 10px 36px;
     border: 2px solid transparent;
     background-color: variables.$headingBackground;
     width: fit-content;
-    align-self: center;
+    align-self: center; 
     transition: all ease-in 0.3s;
 }
 

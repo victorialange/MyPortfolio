@@ -236,7 +236,12 @@
         top: 20px;
         right: 10px;
         transition: all 400ms;
-        &:not(:hover) {
+        &:hover,
+        &:focus {
+            color: variables.$iconHover;
+        }
+        &:not(:hover)
+        &:not(:focus) {
             color: variables.$black;
         }
     }
