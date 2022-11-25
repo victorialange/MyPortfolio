@@ -267,10 +267,9 @@ header,
   background-color: #FAF4F4;
 }
 
-a,
-button {
-  -webkit-transition: all ease-in 0.2s;
-  transition: all ease-in 0.2s;
+i {
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 i:hover,
@@ -279,22 +278,15 @@ i:focus,
 .slideOut a:focus {
   color: #fd849e;
 }
-i:hover:not(:hover) i:hover:not(:focus),
-i:hover:not(:hover) i:focus:not(:focus),
-i:hover:not(:hover) .slideOut a:hover:not(:focus),
-i:hover:not(:hover) .slideOut a:focus:not(:focus),
-i:focus:not(:hover) i:hover:not(:focus),
-i:focus:not(:hover) i:focus:not(:focus),
-i:focus:not(:hover) .slideOut a:hover:not(:focus),
-i:focus:not(:hover) .slideOut a:focus:not(:focus),
-.slideOut a:hover:not(:hover) i:hover:not(:focus),
-.slideOut a:hover:not(:hover) i:focus:not(:focus),
-.slideOut a:hover:not(:hover) .slideOut a:hover:not(:focus),
-.slideOut a:hover:not(:hover) .slideOut a:focus:not(:focus),
-.slideOut a:focus:not(:hover) i:hover:not(:focus),
-.slideOut a:focus:not(:hover) i:focus:not(:focus),
-.slideOut a:focus:not(:hover) .slideOut a:hover:not(:focus),
-.slideOut a:focus:not(:hover) .slideOut a:focus:not(:focus) {
+
+.hamburgerMenu:hover,
+.hamburgerMenu:focus {
+  color: #fd849e;
+}
+.hamburgerMenu:hover:not(:hover) .hamburgerMenu:hover:not(:focus),
+.hamburgerMenu:hover:not(:hover) .hamburgerMenu:focus:not(:focus),
+.hamburgerMenu:focus:not(:hover) .hamburgerMenu:hover:not(:focus),
+.hamburgerMenu:focus:not(:hover) .hamburgerMenu:focus:not(:focus) {
   color: #000100;
 }
 
@@ -633,6 +625,9 @@ header a:last-child {
   margin-top: 80px;
   -ms-flex-item-align: center;
       align-self: center;
+}
+header a:last-child:hover, header a:last-child:focus {
+  color: #fd849e;
 }
 
 .headerLinks {
@@ -1208,9 +1203,6 @@ footer .wrapper {
     right: 10px;
     -webkit-transition: all 400ms;
     transition: all 400ms;
-  }
-  .hamburgerMenu:not(:hover) {
-    color: #000100;
   }
   .slideOut {
     top: 60px;
