@@ -17,6 +17,14 @@ header {
     a:last-child {
         margin-top: 80px;
         align-self: center;
+        &:hover,
+        &:focus {
+            color: variables.$iconHover; 
+        }
+        &:not(:hover)
+        &:not(:focus) {
+            color: variables.$black;
+        } 
     }
 }
 

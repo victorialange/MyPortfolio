@@ -46,18 +46,39 @@ header,
 }
 
 // icon hover
-i {
-    transition: all ease-in 0.3s;
+a,
+button {
+    transition: all ease-in 0.2s;
 }
-i:hover,
-i:focus,
-.slideOut a:hover,
-.slideOut a:focus {
+.socials a:hover,
+.socials a:focus {
     color: variables.$iconHover;
-    &:not(:hover) {
+    &:not(:hover)
+    &:not(:focus) {
         color: variables.$black;
     }
 }
+
+.slideOut a:hover,
+.slideOut a:focus {
+    color: variables.$iconHover;
+}
+
+.hamburgerMenu:hover,
+.hamburgerMenu:focus {
+    color: variables.$iconHover;
+    &:not(:hover)
+    &:not(:focus) {
+        color: variables.$black;
+    }
+}
+
+
+
+
+//  {
+//     color: variables.$iconHover;
+// }
 
 // buttons
 .button {
