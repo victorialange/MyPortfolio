@@ -43,6 +43,25 @@
     margin: 40px 0 80px;
 }
 
+.projectTextContainer,
+.projectImgContainer {
+    width: calc(50% - 50px);
+}
+
+.projectOneFlex,
+.projectThreeFlex {
+    .projectTextContainer {
+        margin-right: 50px;
+    }
+}
+
+.projectTwoFlex,
+.projectFourFlex {
+    .projectTextContainer {
+        margin-left: 50px;
+    }
+}
+
 .projectTwoFlex,
 .projectFourFlex {
     display: flex;
@@ -53,7 +72,7 @@
 }
 
 .projectTextContainer {
-    width: 42%;
+    // width: 42%;
     display: flex;
     flex-direction: column;
 }
@@ -105,5 +124,8 @@
 
 
 .projectImgContainer {
-    width: 50%;
+    // width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
