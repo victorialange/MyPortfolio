@@ -19,6 +19,7 @@
     // HEADER
     header {
         padding: 300px 0 100px;
+        
     }
     // ABOUT
     .aboutImgContainer {
@@ -214,8 +215,9 @@
         top: 0;
         left:0;
         display: unset;
-        height: 80px; 
+        height: 70px; 
     }
+
     // FLEX LOGO & BURGER
     .logoBurgerFlex {
         display: flex;
@@ -284,6 +286,7 @@
         display: none;
     }
     .navActive {
+        // important to still specify height when burger icon is clicked
         height: 100%;
         z-index: 10;
         background-color: variables.$overlayBackground;
@@ -516,14 +519,6 @@
 }
 
 @media (max-width: 325px) {
-    // HAMBURGER NAV
-    .hamburgerNav {
-        height: 70px;
-    }
-    // important to still specify height when burger icon is clicked
-    .navActive {
-        height: 100%;
-    }
     // HEADER padding-top
     header {
         padding-top: 180px;
