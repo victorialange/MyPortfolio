@@ -41,7 +41,6 @@
     .logo {
         display: flex;
         align-items: center;
-        margin-left: 15px;
     }
     ul,
     .logo {
@@ -49,7 +48,7 @@
     }
     .socials {
         justify-content: flex-end;
-        margin-right: 20px;
+        margin: 0;
     }
     // main nav ul
     .navLinks {
@@ -96,6 +95,7 @@
 .hamburgerMenu {
     background-color: inherit;
     border: none;
+    padding: 0;
     i {
         font-size: 1.4rem;
         // margin-right: 50px;

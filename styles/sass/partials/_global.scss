@@ -46,6 +46,7 @@ img {
 
 // icon hover
 i {
+    // transition property also necessary for rotation transformation of bars and times icon (later in media queries under .navActive class)
     transition: all ease-in 0.3s;
 }
 i:hover,
@@ -55,13 +56,9 @@ i:focus,
     color: variables.$iconHover;
 }
 
-.hamburgerMenu:hover,
-.hamburgerMenu:focus {
+.hamburgerMenu i:hover,
+.hamburgerMenu i:focus {
     color: variables.$iconHover;
-    &:not(:hover)
-    &:not(:focus) {
-        color: variables.$black;
-    }
 }
 
 .socials a:hover,
