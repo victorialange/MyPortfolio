@@ -18,7 +18,7 @@ a,
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
-    font-size: clamp(0.9rem, 0.858rem + 0.6102vw, 1.325rem);
+    font-size: clamp(0.9rem, 0.858rem + 0.5102vw, 1.225rem);
 }
 .formButton {
     span,
@@ -38,12 +38,18 @@ body {
     color: variables.$black;
 }
 
+.projectLinks {
+    a {
+        font-size: clamp(0.9rem, 0.808rem + 0.5102vw, 1.2rem);
+    }
+}
+
 p,
 label,
 input,
 textarea {
     line-height: 1.4;
-    font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
+    font-size: clamp(0.8rem, 0.829rem + 0.3376vw, 1.3rem);
     letter-spacing: 1.1px;
 }
 
@@ -75,7 +81,7 @@ h2 {
 
 h3 {
     // font-size: 1.8rem;
-    font-size: clamp(1.375rem, 1.0938rem + 2.563vw, 3.0125rem);
+    font-size: clamp(1.375rem, 1.038rem + 2.263vw, 3.0125rem);
     text-align: center;
     text-transform: capitalize;
     margin-top: 20px;
@@ -90,7 +96,7 @@ h3 {
 
 h4 {
     // font-size: 1.4rem;
-    font-size: clamp(1.275rem, 1.0938rem + 1.563vw, 2.8125rem);
+    font-size: clamp(1.3rem, 0.6239rem + 1.2307vw, 1.7rem);
     font-weight: normal;
     margin: 0;
     text-transform: capitalize;
@@ -113,7 +119,7 @@ button {
 
 // FOOTER
 footer {
-    color: variables.$secondaryBackground;
+    color: variables.$primaryBackground;
     p {
         margin: 0;
         font-size: clamp(0.8rem, 0.6309rem + 0.4376vw, 1rem);

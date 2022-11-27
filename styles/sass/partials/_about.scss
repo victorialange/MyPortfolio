@@ -2,6 +2,10 @@
 
 .about {
     padding-bottom: 80px;
+    // background image taken from canva.com
+    background: url("./../assets/background_about_2.png");
+    background-size: cover;
+    // position: relative;
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -15,10 +19,22 @@
     }
     span {
         font-weight: bold;
-        border-bottom: 4px solid variables.$headingBackground;
+        border-bottom: 4px solid rgb(253, 132, 158, 0.6);
         padding-bottom: 2.5px;
     }
 }
+
+// .about::before {
+//     content: "";
+//     background: url("./../assets/background_about.png");
+//     opacity: 0.5;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     position: absolute;
+//     z-index: -1;   
+//   }
 
 // FLEX ABOUT
 .aboutFlex {
@@ -30,6 +46,17 @@
     margin-top: 20px;
 }
 .aboutImgContainer {
-    width: 30%;
+    width: 25%;
     align-self: center;
+    background: variables.$imageBackground;
+    border-radius: 30px;
+    img {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-right-style: double;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-right-color: aliceblue;
+        width: 90%;
+    }
 }

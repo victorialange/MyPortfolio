@@ -1,6 +1,16 @@
 @use "./variables";
 
 // styles for LARGE DESKTOPS
+@media (min-width: 1700px) {
+    // ABOUT
+    .about {
+        .aboutImgContainer {
+            width: 20%;
+        }
+    }
+    
+}
+
 @media (min-width: 1500px) {
     // WRAPPER
     .wrapper {
@@ -8,9 +18,12 @@
     }
     // HEADER
     header {
-        padding: 200px 0 60px;
+        padding: 300px 0 100px;
     }
-
+    // ABOUT
+    .aboutImgContainer {
+        width: 25%;
+    }
     // CONTACT
     .contactFormContainer,
     .contactTextContainer {
@@ -38,13 +51,18 @@
             margin-bottom: 10px;
         }
     }
-    .projectOneFlex a,
-    .projectThreeFlex a {
-        width: 60%;
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+           width: 53%; 
+        }
+        
     }
-    .projectTwoFlex a,
-    .projectFourFlex a {
-        width: 100%;
+    .projectTwoFlex,
+    .projectFourFlex {
+        .projectLinks a {
+            width: 100%;
+        }
     }
 } 
 
@@ -57,9 +75,10 @@
     }
     .aboutTextContainer {
         width: 100%;
+        margin-top: 50px;
     }
     .aboutImgContainer {
-        width: 60%;
+        width: 36%;
     }
 
     // PROJECTS
@@ -74,18 +93,14 @@
 }
 
 @media (max-width: 1049px) {
-    // PROJECTS
-    // .projectTextContainer,
-    // .projectImgContainer {
-    //     width: calc((100% / 2) - 15px);
-    // }
-    // PROJECTS
-    .projects {
-        padding-bottom: 40px;
+    // SECTIONS
+    section {
+        padding-top: 60px;
     }
+    // PROJECTS
     .projectFlex {
         flex-direction: column;
-        margin-bottom: 40px;
+        margin: 0 0 80px;
         .projectTextContainer {
             text-align: center;
             align-items: center;
@@ -182,15 +197,6 @@
         text-align: center;
         h3 {
             text-align: center;
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    // NAV
-    nav {
-        i {
-            font-size: 1rem;
         }
     }
 }
@@ -303,6 +309,7 @@
 @media (max-width: 732px) {
     // HEADER
     header {
+        padding: 220px 0 40px;
         span {
             font-size: clamp(2.3rem, 1.877rem + 1.714vw, 2.5rem);
         }
@@ -324,6 +331,10 @@
 
 
 @media (max-width: 680px) {
+    // ABOUT
+    .aboutImgContainer {
+        width: 40%;
+    }
     // SKILLS
     .skillsList {
         li {
@@ -365,7 +376,10 @@
     section {
         padding-top: 70px;
     }
-
+    // ABOUT
+    .aboutImgContainer {
+        width: 45%;
+    }
     // SKILLS
     .skillsList {
         li {
@@ -396,6 +410,10 @@
 }
 
 @media (max-width: 505px) {
+    // ABOUT
+    .aboutImgContainer {
+        width: 50%;
+    }
     // PROJECTS
     .projectThreeFlex {
         h5 {
@@ -410,22 +428,59 @@
     // }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 492px) {
+    // SECTIONS
+    section {
+        padding-top: 55px;
+    }
+    // ABOUT
+    .about {
+        padding-bottom: 45px;
+    }
+    .aboutTextContainer {
+        margin-top: 35px;
+    }
+    // SKILLS
+    .skills {
+        padding-bottom: 50px;
+    }
+    .skillsList {
+        margin-top: 0;
+    }
     // PROJECTS
-    // .projectOneFlex,
-    // .projectThreeFlex {
-    //     .projectLinks a {
-    //         width: 57%;
-    //     }
-    // }
     .projectThreeFlex {
         h5 {
             width: 92%;
         }
     }
+    // CONTACT
+    .contact {
+        padding-top: 60px;
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+    .contactTextContainer {
+        margin: 25px 0 25px;
+    }
+    .socialsContainer {
+        margin-top: 70px;
+        ul {
+            margin-bottom: 40px;
+        }
+    }
+
 }
 
 @media (max-width: 429px) {
+    // HEADER
+    header {
+        padding: 200px 0 35px;
+    }
+    // ABOUT
+    .aboutImgContainer {
+        width: 55%;
+    }
     // PROJECTS
     // .projectOneFlex,
     // .projectThreeFlex {
@@ -440,6 +495,10 @@
 }
 
 @media (max-width: 400px) {
+    // ABOUT
+    .aboutImgContainer {
+        width: 60%;
+    }
     // PROJECTS
     // .projectOneFlex,
     // .projectThreeFlex {
@@ -456,20 +515,21 @@
     }
 }
 
-@media (max-width: 395px) {
-    // PROJECTS
-    // .projectOneFlex,
-    // .projectThreeFlex {
-    //     .projectLinks a {
-    //         width: 80%;
-    //     }
-    // }
-}
-
 @media (max-width: 325px) {
+    // HAMBURGER NAV
+    .hamburgerNav {
+        height: 70px;
+    }
+    // important to still specify height when burger icon is clicked
+    .navActive {
+        height: 100%;
+    }
     // HEADER padding-top
     header {
-        padding-top: 110px;
+        padding-top: 180px;
+        a:last-child {
+            margin-top: 60px;
+        }
     }
     // ABOUT, SKILLS padding-bottom
     .about {
