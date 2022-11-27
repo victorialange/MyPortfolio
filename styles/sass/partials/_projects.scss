@@ -6,11 +6,11 @@
     h4 {
         color: variables.$lightBlack;
         // font-weight: bold;
-        font-size: clamp(1.4rem, 0.7239rem + 1.2307vw, 1.8rem);
+        font-size: clamp(1.275rem, 1.0938rem + 1.163vw, 2.6125rem);
         font-weight: bold;
     }
     h5 {
-        border: 3px solid variables.$headingBackground;
+        border: 2px solid variables.$iconHover;
         padding: 5px 10px;
         width: fit-content;
     }
@@ -95,7 +95,7 @@
     .button:hover,
     .button:focus {
         color: variables.$black;
-        background-color: variables.$secondaryBackground;
+        background-color: variables.$primaryBackground;
         border: 2px solid variables.$black;
         &:hover i,
         &:focus i {

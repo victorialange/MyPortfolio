@@ -1,9 +1,12 @@
 @use "./variables";
 
 header {
-    padding: 150px 0 30px;
+    padding: 250px 0 50px;
     // background-color: #FFE8E1;
     text-align: center;
+    // background image taken from canva.com
+    background: url("./../assets/background_1.png");
+    background-size: cover;
     span {
         // font-size: 2.5rem;
         margin-top: 20px;
@@ -13,10 +16,15 @@ header {
     }
     .button {
         margin-top: 50px;
+        &:hover,
+        &:focus {
+            border: none;
+        }
     }
     a:last-child {
         margin-top: 80px;
         align-self: center;
+        border-color: variables.$black;
         &:hover,
         &:focus {
             color: variables.$iconHover;
