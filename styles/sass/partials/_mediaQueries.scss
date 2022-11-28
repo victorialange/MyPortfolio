@@ -1,6 +1,15 @@
 @use "./variables";
 
 // styles for LARGE DESKTOPS
+@media (min-width: 1800px) {
+    // SKILLS
+    ul.skillsList {
+        li:nth-child(11) {
+            margin-top: 0;
+        }
+    }
+}
+
 @media (min-width: 1670px) {
     // ABOUT
     .about {
