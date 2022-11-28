@@ -63,6 +63,24 @@
     }
 }
 
+@media (max-width: 1369px) {
+    // PROJECTS
+    .projectOneFlex {
+        h5 {
+            width: 76%;
+        }
+    }
+}
+
+@media (max-width: 1288px) {
+    // PROJECTS
+    .projectOneFlex {
+        h5 {
+            width: 80%;
+        }
+    }
+}
+
 // medium DESKTOPS
 @media (max-width: 1275px) {
     // PROJECTS
@@ -88,7 +106,16 @@
             width: 100%;
         }
     }
-} 
+}
+
+@media (max-width: 1220px) {
+    // PROJECTS
+    .projectOneFlex {
+        h5 {
+            width: 87%;
+        }
+    }
+}
 
 // SMALL DESKTOPS 
 @media (max-width: 1123px) {
@@ -106,9 +133,11 @@
     }
 
     // PROJECTS
-    // .projectTextContainer {
-    //     width: 42%;
-    // }
+    .projectOneFlex {
+        h5 {
+           width: 95%; 
+        }
+    }
 
     // CONTACT FORM
     textarea {
@@ -121,6 +150,13 @@
     ul.skillsList {
         li:nth-child(6) {
             margin-top: 30px;
+        }
+    }
+    // PROJECTS
+    .projectOneFlex,
+    .projectThreeFlex {
+        .projectLinks a {
+            width: 55%;
         }
     }
 }
@@ -171,6 +207,11 @@
     .projectFourFlex {
         .projectTextContainer {
             margin-left: 0;
+        }
+    }
+    .projectOneFlex {
+        h5 {
+            width: fit-content;
         }
     }
 
@@ -675,6 +716,15 @@
     .skills {
         padding-bottom: 50px;
     }
+    // PROJECTS
+    .projectThreeFlex {
+        h5 {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 323px) {
     // PROJECTS
     .projectThreeFlex {
         h5 {

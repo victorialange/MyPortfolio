@@ -1116,6 +1116,16 @@ footer .wrapper {
     margin-top: 30px;
   }
 }
+@media (max-width: 1369px) {
+  .projectOneFlex h5 {
+    width: 76%;
+  }
+}
+@media (max-width: 1288px) {
+  .projectOneFlex h5 {
+    width: 80%;
+  }
+}
 @media (max-width: 1275px) {
   .projectLinks {
     -webkit-box-orient: vertical;
@@ -1139,6 +1149,11 @@ footer .wrapper {
     width: 100%;
   }
 }
+@media (max-width: 1220px) {
+  .projectOneFlex h5 {
+    width: 87%;
+  }
+}
 @media (max-width: 1123px) {
   .aboutFlex {
     -webkit-box-orient: vertical;
@@ -1156,6 +1171,9 @@ footer .wrapper {
   .aboutImgContainer {
     width: 36%;
   }
+  .projectOneFlex h5 {
+    width: 95%;
+  }
   textarea {
     height: 175px;
   }
@@ -1163,6 +1181,10 @@ footer .wrapper {
 @media (max-width: 1092px) {
   ul.skillsList li:nth-child(6) {
     margin-top: 30px;
+  }
+  .projectOneFlex .projectLinks a,
+.projectThreeFlex .projectLinks a {
+    width: 55%;
   }
 }
 @media (max-width: 1049px) {
@@ -1217,6 +1239,11 @@ footer .wrapper {
   .projectTwoFlex .projectTextContainer,
 .projectFourFlex .projectTextContainer {
     margin-left: 0;
+  }
+  .projectOneFlex h5 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .contact {
     padding-top: 80px;
@@ -1562,6 +1589,11 @@ ul.skillsList li:nth-child(10) {
   .skills {
     padding-bottom: 50px;
   }
+  .projectThreeFlex h5 {
+    width: 100%;
+  }
+}
+@media (max-width: 323px) {
   .projectThreeFlex h5 {
     width: 80%;
   }
