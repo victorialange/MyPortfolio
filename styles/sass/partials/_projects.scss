@@ -27,11 +27,15 @@
                 padding-bottom: 0px;
                 background: none;
             }
-            &:hover,
-            &:focus {
-                border-bottom: 4px solid variables.$headingBackground;
-                background-color: variables.$headingBackground;
+            &:last-child {
+                border-bottom: 4px solid variables.$softerPink;
                 padding-bottom: 0.5px;
+            }
+            &:last-child:hover,
+            &:last-child:focus {
+                border-bottom: none;
+                background-color: variables.$softerPink;
+                padding-bottom: 0;
             }
         }
     }
