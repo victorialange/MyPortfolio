@@ -748,7 +748,6 @@ header a:last-child:hover, header a:last-child:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.skillsList li:nth-child(10),
 .skillsList li:nth-child(11) {
   margin-top: 30px;
 }
@@ -1061,9 +1060,12 @@ footer .wrapper {
           justify-content: space-between;
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1670px) {
   .about .aboutImgContainer {
     width: 20%;
+  }
+  ul.skillsList li:last-child {
+    margin-top: 0;
   }
 }
 @media (min-width: 1500px) {
@@ -1085,6 +1087,11 @@ footer .wrapper {
   }
   .contact form {
     margin-top: 50px;
+  }
+}
+@media (max-width: 1428px) {
+  ul.skillsList li:nth-child(10) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 1275px) {
@@ -1129,6 +1136,11 @@ footer .wrapper {
   }
   textarea {
     height: 175px;
+  }
+}
+@media (max-width: 1092px) {
+  ul.skillsList li:nth-child(6) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 1049px) {
@@ -1195,17 +1207,21 @@ footer .wrapper {
   nav i {
     font-size: 1.2rem;
   }
-  .skillsList li {
+  ul.skillsList li {
     width: calc(25% - 25px);
     text-align: center;
     margin: 0 25px 10px 0;
   }
-  .skillsList li:nth-child(6) {
+  ul.skillsList li:nth-child(6) {
     margin-right: 25px;
+    margin-top: 0;
   }
-  .skillsList li:nth-child(4),
-.skillsList li:nth-child(8) {
+  ul.skillsList li:nth-child(4),
+ul.skillsList li:nth-child(8) {
     margin-right: 0;
+  }
+  ul.skillsList li:nth-child(10) {
+    margin-top: 0;
   }
   .contactTextContainer {
     margin-bottom: 30px;
@@ -1222,6 +1238,11 @@ footer .wrapper {
   }
   .socialsContainer h3 {
     text-align: center;
+  }
+}
+@media (max-width: 885px) {
+  ul.skillsList li:nth-child(10) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 800px) {
@@ -1339,27 +1360,41 @@ footer .wrapper {
     text-align: center;
   }
 }
+@media (max-width: 692px) {
+  ul.skillsList li:nth-child(6) {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 680px) {
   .aboutImgContainer {
     width: 40%;
   }
-  .skillsList li {
+  ul.skillsList li {
     width: calc(33.3333333333% - 25px);
   }
-  .skillsList li:nth-child(4),
-.skillsList li:nth-child(8) {
+  ul.skillsList li:nth-child(4),
+ul.skillsList li:nth-child(8) {
     margin-right: 25px;
   }
-  .skillsList li:nth-child(3),
-.skillsList li:nth-child(6),
-.skillsList li:nth-child(9) {
+  ul.skillsList li:nth-child(3),
+ul.skillsList li:nth-child(6),
+ul.skillsList li:nth-child(9) {
     margin-right: 0;
+  }
+  ul.skillsList li:nth-child(6),
+ul.skillsList li:nth-child(10) {
+    margin-top: 0;
   }
   .socialsContainer {
     margin-top: 80px;
   }
   .socialsContainer ul {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 643px) {
+  ul.skillsList li:nth-child(10) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 550px) {
@@ -1369,24 +1404,30 @@ footer .wrapper {
   .aboutImgContainer {
     width: 45%;
   }
-  .skillsList li {
+  ul.skillsList li {
     width: calc(50% - 25px);
   }
-  .skillsList li:nth-child(3),
-.skillsList li:nth-child(9) {
+  ul.skillsList li:nth-child(3),
+ul.skillsList li:nth-child(9) {
     margin-right: 25px;
   }
-  .skillsList li:nth-child(2),
-.skillsList li:nth-child(4),
-.skillsList li:nth-child(6),
-.skillsList li:nth-child(8),
-.skillsList li:nth-child(10) {
+  ul.skillsList li:nth-child(2),
+ul.skillsList li:nth-child(4),
+ul.skillsList li:nth-child(6),
+ul.skillsList li:nth-child(8),
+ul.skillsList li:nth-child(10) {
     margin-right: 0;
+  }
+  ul.skillsList li:nth-child(10) {
+    margin-top: 0;
   }
 }
 @media (max-width: 505px) {
   .aboutImgContainer {
     width: 50%;
+  }
+  ul.skillsList li:last-child {
+    margin-top: 0;
   }
   .projectThreeFlex h5 {
     width: 87%;
@@ -1427,6 +1468,11 @@ footer .wrapper {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 474px) {
+  ul.skillsList li:last-child {
+    margin-top: 15px;
+  }
+}
 @media (max-width: 429px) {
   header {
     padding: 200px 0 35px;
@@ -1438,6 +1484,11 @@ footer .wrapper {
     padding-bottom: 50px;
   }
 }
+@media (max-width: 414px) {
+  ul.skillsList li:nth-child(10) {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 400px) {
   .aboutImgContainer {
     width: 60%;
@@ -1446,6 +1497,11 @@ footer .wrapper {
 .projectTwoFlex h5,
 .projectFourFlex h5 {
     width: 77%;
+  }
+}
+@media (max-width: 330px) {
+  ul.skillsList li:nth-child(6) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 325px) {
