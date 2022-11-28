@@ -688,6 +688,19 @@ header a:last-child:hover, header a:last-child:focus {
   width: 60%;
   margin-top: 20px;
 }
+.aboutTextContainer a {
+  font-size: inherit;
+  font-weight: bold;
+  color: #363332;
+  border-bottom: 4px solid rgba(253, 132, 158, 0.6);
+  padding-bottom: 0.5px;
+}
+.aboutTextContainer a:hover, .aboutTextContainer a:focus {
+  border-bottom: none;
+  color: #fd849e;
+  padding-bottom: 0;
+  font-weight: bold;
+}
 
 .aboutImgContainer {
   width: 25%;
@@ -799,10 +812,14 @@ header a:last-child:hover, header a:last-child:focus {
   padding-bottom: 0px;
   background: none;
 }
-.projects p a:hover, .projects p a:focus {
-  border-bottom: 4px solid #FFC4D1;
-  background-color: #FFC4D1;
+.projects p a:last-child {
+  border-bottom: 4px solid rgba(253, 132, 158, 0.6);
   padding-bottom: 0.5px;
+}
+.projects p a:last-child:hover, .projects p a:last-child:focus {
+  border-bottom: none;
+  background-color: rgba(253, 132, 158, 0.6);
+  padding-bottom: 0;
 }
 
 .projectFlex {

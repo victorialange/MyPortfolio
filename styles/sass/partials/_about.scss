@@ -19,7 +19,7 @@
     }
     span {
         font-weight: bold;
-        border-bottom: 4px solid rgb(253, 132, 158, 0.6);
+        border-bottom: 4px solid variables.$softerPink;
         padding-bottom: 2.5px;
     }
 }
@@ -44,6 +44,21 @@
 .aboutTextContainer {
     width: 60%;
     margin-top: 20px;
+    a {
+        font-size: inherit;
+        font-weight: bold;
+        color: variables.$lightBlack;
+        border-bottom: 4px solid variables.$softerPink;
+        padding-bottom: 0.5px;
+        &:hover,
+        &:focus {
+            border-bottom: none;
+            color: variables.$iconHover;
+            padding-bottom: 0;
+            font-weight: bold;
+        }
+    }
+    
 }
 .aboutImgContainer {
     width: 25%;
