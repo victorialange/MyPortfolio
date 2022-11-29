@@ -423,15 +423,28 @@
                             <h3>Contact Form</h3>
                             <form action="https://formspree.io/f/mpznnvwy"
                         method="POST">
+                                <!-- hidden "honeypot" input with name of _gotcha that lets formspree check for spammy submissions (bots might not know to ignore this field, real humans will because hidden with CSS), advanced spam filtering -->
+                                <!-- info taken from https://help.formspree.io/hc/en-us/articles/360013580813-Honeypot-spam-filtering -->
+                                <input type="text" name="_gotcha" />
+
+                                <!-- name attributes capitalized because it looks nicer when I get the email from formspree with the form content (displays input under name attribute) -->
+
                                 <!-- NAME -->
                                 <label for="userName">Your Name:</label>
-                                <input type="text" id="userName" name="userName" required>
+                                <input type="text" id="userName" name="Name" required>
+                                <!-- Subject Line (optional) -->
+                                <!-- lets user define a subject line for email (also better for me, know what it's about, not cluttered together with other form submissions) -->
+                                <!-- info taken from https://help.formspree.io/hc/en-us/articles/360013579753-Email-subject-line -->
+                                <label for="subject">Subject (optional):</label>
+                                <input name="subject" id="subject"/>
                                 <!-- EMAIL -->
                                 <label for="userEmail">Your Email Adress:</label>
-                                <input type="email" id="userEmail" name="userEmail" required>
+                                <!-- setting name of email input to name, so that I'm able to use it as a reply to address, gives me the option to reply to that email -->
+                                <!-- info taken from https://help.formspree.io/hc/en-us/articles/360012262774-Email-Reply-To-address- -->
+                                <input type="email" id="userEmail" name="Email" required>
                                 <!-- MESSAGE -->
                                 <label for="message">Your Message:</label>
-                                <textarea name="message" id="message" required></textarea>
+                                <textarea name="Message" id="message" required></textarea>
                                 <button type="submit" class="button formButton">
                                     <span>Send</span>
                                     <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
