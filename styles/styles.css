@@ -1064,6 +1064,10 @@ textarea {
   height: 150px;
 }
 
+input[name=_gotcha] {
+  display: none;
+}
+
 footer {
   background-color: #000100;
   padding: 25px 0 20px;

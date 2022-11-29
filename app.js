@@ -84,3 +84,22 @@ window.onbeforeunload = () => {
 // })
 
 
+
+// const formEl = document.querySelector("form");
+
+
+// trying out input value of subject and console logging
+// document.querySelector("input[name=subject]").addEventListener("change", (event) => {
+//     event.preventDefault();
+//     const subjectInput = document.querySelector("input[name=subject]").value;
+//     // console.log(userSubject.value);
+//     // console.log(subjectInput);
+// })
+
+
+
+
+
+
+
+
