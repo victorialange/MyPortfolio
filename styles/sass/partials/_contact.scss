@@ -13,13 +13,21 @@
         margin-top: 12px;
         align-self: flex-start;
         transition: all ease-in 0.3s;
+        span,
+        i {
+            color: white;
+        }
     }
     .formButton:hover,
     .formButton:focus,
     .formButton:active {
         background-color: variables.$newPrimaryBackground;
-        color: variables.$black;
         border: 2px solid variables.$black;
+        span,
+        i {
+            color: variables.$black;
+            font-weight: bold;
+        }
     }
     ul {
         display: flex;

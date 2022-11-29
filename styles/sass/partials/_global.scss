@@ -56,9 +56,13 @@ i:focus,
     color: variables.$iconHover;
 }
 
-.hamburgerMenu i:hover,
-.hamburgerMenu i:focus {
+.hamburgerMenu:hover i,
+.hamburgerMenu:focus i {
     color: variables.$iconHover;
+    // &:not(:hover) i
+    // &:not(:focus) i {
+    //     color: variables.$black;
+    // }
 }
 
 .socials a:hover,

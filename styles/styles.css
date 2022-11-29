@@ -277,8 +277,8 @@ i:focus,
   color: #fd849e;
 }
 
-.hamburgerMenu i:hover,
-.hamburgerMenu i:focus {
+.hamburgerMenu:hover i,
+.hamburgerMenu:focus i {
   color: #fd849e;
 }
 
@@ -951,12 +951,24 @@ header a:last-child:hover, header a:last-child:focus {
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
+.contact .formButton span,
+.contact .formButton i {
+  color: white;
+}
 .contact .formButton:hover,
 .contact .formButton:focus,
 .contact .formButton:active {
   background-color: #f8d4c9;
-  color: #000100;
   border: 2px solid #000100;
+}
+.contact .formButton:hover span,
+.contact .formButton:hover i,
+.contact .formButton:focus span,
+.contact .formButton:focus i,
+.contact .formButton:active span,
+.contact .formButton:active i {
+  color: #000100;
+  font-weight: bold;
 }
 .contact ul {
   display: -webkit-box;
