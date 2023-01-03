@@ -5,7 +5,6 @@
     // background image taken from canva.com
     background: url("./../assets/background_about_2.png");
     background-size: cover;
-    // position: relative;
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -23,18 +22,6 @@
         padding-bottom: 2.5px;
     }
 }
-
-// .about::before {
-//     content: "";
-//     background: url("./../assets/background_about.png");
-//     opacity: 0.5;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     position: absolute;
-//     z-index: -1;   
-//   }
 
 // FLEX ABOUT
 .aboutFlex {

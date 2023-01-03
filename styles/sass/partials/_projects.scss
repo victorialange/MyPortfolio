@@ -1,11 +1,9 @@
 @use "./variables";
 
 .projects {
-    // background-color: #fff;
     padding-bottom: 10px;
     h4 {
         color: variables.$lightBlack;
-        // font-weight: bold;
         font-size: clamp(1.275rem, 1.0938rem + 1.163vw, 2.6125rem);
         font-weight: bold;
     }
@@ -19,14 +17,7 @@
         a {
             font-size: clamp(0.8rem, 0.7309rem + 0.5376vw, 1rem);
             font-weight: bold;
-            color: variables.$lightBlack;
-            &:first-child:hover,
-            &:first-child:focus {
-                color: variables.$iconHover;
-                border-bottom: 0px;
-                padding-bottom: 0px;
-                background: none;
-            }
+            color: variables.$lightBlack;           
             &:last-child {
                 border-bottom: 4px solid variables.$softerPink;
                 padding-bottom: 0.5px;
@@ -76,16 +67,67 @@
 }
 
 .projectTextContainer {
-    // width: 42%;
     display: flex;
     flex-direction: column;
+}
+
+.projectOneFlex {
+    p {
+        a:first-child,
+        a:nth-child(2),
+        a:last-child {
+            border-bottom: 4px solid variables.$softerPink;
+            display: inline-block;
+            padding-top: 2px;
+            padding-bottom: 0px;
+        }
+        a:first-child:hover,
+        a:first-child:focus,
+        a:nth-child(2):hover,
+        a:nth-child(2):focus,
+        a:last-child:hover,
+        a:last-child:focus {
+            border-bottom: none;
+            background-color: variables.$softerPink;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.projectTwoFlex,
+.projectThreeFlex {
+    p {
+        a:first-child,
+        a:nth-child(2),
+        a:last-child {
+            border: none;
+            display: inline-block;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        a:first-child:hover,
+        a:first-child:focus {
+            color: variables.$iconHover;
+            border-bottom: 0px;
+            padding-bottom: 0px;
+            background: none;
+        }
+    }
+}
+
+.projectThreeFlex {
+    p {
+        a:last-child {
+            border-bottom: 4px solid variables.$softerPink;
+            padding-bottom: 0.5px;
+        }
+    }
 }
 
 .projectLinks {
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
-    // justify-content: space-between;
     a:first-child {
         margin-right: 10px;
     }
@@ -129,7 +171,6 @@
 
 
 .projectImgContainer {
-    // width: 52%;
     display: flex;
     flex-direction: column;
     align-self: center;
