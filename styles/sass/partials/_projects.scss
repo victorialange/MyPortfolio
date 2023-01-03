@@ -75,7 +75,7 @@
     p {
         a:first-child,
         a:nth-child(2),
-        a:last-child {
+        a:nth-child(3) {
             border-bottom: 4px solid variables.$softerPink;
             display: inline-block;
             padding-top: 2px;
@@ -85,11 +85,25 @@
         a:first-child:focus,
         a:nth-child(2):hover,
         a:nth-child(2):focus,
-        a:last-child:hover,
-        a:last-child:focus {
+        a:nth-child(3):hover,
+        a:nth-child(3):focus {
             border-bottom: none;
             background-color: variables.$softerPink;
             padding-bottom: 0;
+        }
+        a:last-child,
+        a:last-child {
+            border: none;
+            display: inline-block;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        a:last-child:hover,
+        a:last-child:focus {
+            color: variables.$iconHover;
+            border-bottom: 0px;
+            padding-bottom: 0px;
+            background: none;
         }
     }
 }
